@@ -1,0 +1,183 @@
+{
+  "results": [
+    {
+      "backbone": "cnn",
+      "dataset": "A",
+      "regime": "linear",
+      "cfg": {
+        "lr": 0.0005,
+        "epochs": 15,
+        "batch_size": 32
+      },
+      "best_val_acc": 0.8148,
+      "test_acc": 0.808,
+      "time_sec": 433.6840980052948
+    },
+    {
+      "backbone": "cnn",
+      "dataset": "A",
+      "regime": "partial",
+      "cfg": {
+        "lr": 0.0005,
+        "epochs": 15,
+        "batch_size": 32
+      },
+      "best_val_acc": 0.9226,
+      "test_acc": 0.9177,
+      "time_sec": 435.0116038322449
+    },
+    {
+      "backbone": "cnn",
+      "dataset": "A",
+      "regime": "full",
+      "cfg": {
+        "lr": 0.0005,
+        "epochs": 15,
+        "batch_size": 32
+      },
+      "best_val_acc": 0.929,
+      "test_acc": 0.9186,
+      "time_sec": 713.9986088275909
+    },
+    {
+      "backbone": "cnn",
+      "dataset": "B",
+      "regime": "linear",
+      "cfg": {
+        "lr": 0.001,
+        "epochs": 15,
+        "batch_size": 64
+      },
+      "best_val_acc": 0.8608333333333333,
+      "test_acc": 0.8634,
+      "time_sec": 529.1816821098328
+    },
+    {
+      "backbone": "cnn",
+      "dataset": "B",
+      "regime": "partial",
+      "cfg": {
+        "lr": 0.001,
+        "epochs": 15,
+        "batch_size": 64
+      },
+      "best_val_acc": 0.9403333333333334,
+      "test_acc": 0.9367,
+      "time_sec": 530.2453951835632
+    },
+    {
+      "backbone": "cnn",
+      "dataset": "B",
+      "regime": "full",
+      "cfg": {
+        "lr": 0.001,
+        "epochs": 15,
+        "batch_size": 64
+      },
+      "best_val_acc": 0.9445,
+      "test_acc": 0.9395,
+      "time_sec": 801.713504076004
+    },
+    {
+      "backbone": "vit",
+      "dataset": "A",
+      "regime": "linear",
+      "cfg": {
+        "lr": 0.0005,
+        "epochs": 15,
+        "batch_size": 64
+      },
+      "best_val_acc": 0.884,
+      "test_acc": 0.8832,
+      "time_sec": 448.25580739974976
+    },
+    {
+      "backbone": "vit",
+      "dataset": "A",
+      "regime": "partial",
+      "cfg": {
+        "lr": 0.0005,
+        "epochs": 15,
+        "batch_size": 64
+      },
+      "best_val_acc": 0.909,
+      "test_acc": 0.9074,
+      "time_sec": 448.34423065185547
+    },
+    {
+      "backbone": "vit",
+      "dataset": "A",
+      "regime": "full",
+      "cfg": {
+        "lr": 0.0005,
+        "epochs": 15,
+        "batch_size": 64
+      },
+      "best_val_acc": 0.9132,
+      "test_acc": 0.9012,
+      "time_sec": 974.5493001937866
+    },
+    {
+      "backbone": "vit",
+      "dataset": "B",
+      "regime": "linear",
+      "cfg": {
+        "lr": 0.0005,
+        "epochs": 15,
+        "batch_size": 64
+      },
+      "best_val_acc": 0.8778333333333334,
+      "test_acc": 0.8731,
+      "time_sec": 549.73193192482
+    },
+    {
+      "backbone": "vit",
+      "dataset": "B",
+      "regime": "partial",
+      "cfg": {
+        "lr": 0.0005,
+        "epochs": 15,
+        "batch_size": 64
+      },
+      "best_val_acc": 0.9128333333333334,
+      "test_acc": 0.9065,
+      "time_sec": 547.4787311553955
+    },
+    {
+      "backbone": "vit",
+      "dataset": "B",
+      "regime": "full",
+      "cfg": {
+        "lr": 0.0005,
+        "epochs": 15,
+        "batch_size": 64
+      },
+      "best_val_acc": 0.9318333333333333,
+      "test_acc": 0.9145,
+      "time_sec": 1166.310949087143
+    }
+  ],
+  "best_cfg_map": {
+    "cnn_A": {
+      "lr": 0.0005,
+      "epochs": 15,
+      "batch_size": 32
+    },
+    "cnn_B": {
+      "lr": 0.001,
+      "epochs": 15,
+      "batch_size": 64
+    },
+    "vit_A": {
+      "lr": 0.0005,
+      "epochs": 15,
+      "batch_size": 64
+    },
+    "vit_B": {
+      "lr": 0.0005,
+      "epochs": 15,
+      "batch_size": 64
+    }
+  },
+  "total_seconds": 55953.52003622055
+}

@@ -1,0 +1,1527 @@
+[Mon Nov 10 09:37:40 AM EST 2025] Job started on qa-a10-031.crc.nd.edu
+Python executable: /users/jwu35/.conda/envs/transfer/bin/python
+Torch: 2.5.1+cu121 CUDA available: True Device: NVIDIA A10
+[Mon Nov 10 09:37:54 AM EST 2025] Starting AutoML training...
+python: can't open file '/users/jwu35/Myspace/Project/NeSy/Ad/transfer_autoML.py': [Errno 2] No such file or directory
+[Mon Nov 10 09:37:54 AM EST 2025] Job finished.
+[Mon Nov 10 09:39:07 AM EST 2025] Job started on qa-a10-031.crc.nd.edu
+Python executable: /users/jwu35/.conda/envs/transfer/bin/python
+Torch: 2.5.1+cu121 CUDA available: True Device: NVIDIA A10
+[Mon Nov 10 09:39:14 AM EST 2025] Starting AutoML training...
+Using device: cuda
+Files already downloaded and verified
+Downloading http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-images-idx3-ubyte.gz
+Downloading http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-images-idx3-ubyte.gz to ./data/FashionMNIST/raw/train-images-idx3-ubyte.gz
+  0%|          | 0.00/26.4M [00:00<?, ?B/s]  0%|          | 32.8k/26.4M [00:00<01:31, 290kB/s]  0%|          | 65.5k/26.4M [00:00<01:29, 294kB/s]  0%|          | 98.3k/26.4M [00:00<01:28, 297kB/s]  0%|          | 131k/26.4M [00:00<01:28, 296kB/s]   1%|          | 197k/26.4M [00:00<01:05, 399kB/s]  1%|          | 295k/26.4M [00:00<01:01, 422kB/s]  1%|▏         | 393k/26.4M [00:00<00:47, 547kB/s]  2%|▏         | 459k/26.4M [00:00<00:46, 559kB/s]  2%|▏         | 524k/26.4M [00:01<00:45, 568kB/s]  2%|▏         | 590k/26.4M [00:01<00:45, 573kB/s]  2%|▏         | 655k/26.4M [00:01<01:42, 252kB/s]  3%|▎         | 754k/26.4M [00:02<01:35, 270kB/s]  3%|▎         | 819k/26.4M [00:02<01:32, 276kB/s]  3%|▎         | 918k/26.4M [00:02<01:09, 369kB/s]  4%|▍         | 1.02M/26.4M [00:02<01:04, 393kB/s]  4%|▍         | 1.08M/26.4M [00:03<01:50, 229kB/s]  4%|▍         | 1.15M/26.4M [00:03<01:43, 244kB/s]  5%|▍         | 1.21M/26.4M [00:03<01:38, 256kB/s]  5%|▍         | 1.31M/26.4M [00:03<01:12, 346kB/s]  5%|▌         | 1.41M/26.4M [00:04<01:06, 375kB/s]  6%|▌         | 1.57M/26.4M [00:04<00:43, 565kB/s]  6%|▋         | 1.67M/26.4M [00:04<00:39, 629kB/s]  7%|▋         | 1.77M/26.4M [00:04<00:40, 612kB/s]  7%|▋         | 1.87M/26.4M [00:04<00:40, 611kB/s]  7%|▋         | 1.97M/26.4M [00:04<00:36, 672kB/s]  8%|▊         | 2.06M/26.4M [00:04<00:33, 724kB/s]  8%|▊         | 2.16M/26.4M [00:05<00:31, 765kB/s]  9%|▊         | 2.26M/26.4M [00:05<00:30, 798kB/s]  9%|▉         | 2.36M/26.4M [00:05<00:29, 822kB/s]  9%|▉         | 2.46M/26.4M [00:05<00:31, 762kB/s] 10%|▉         | 2.56M/26.4M [00:05<00:29, 800kB/s] 10%|█         | 2.65M/26.4M [00:05<00:28, 828kB/s] 10%|█         | 2.75M/26.4M [00:05<00:27, 849kB/s] 11%|█         | 2.85M/26.4M [00:05<00:27, 864kB/s] 11%|█         | 2.95M/26.4M [00:05<00:26, 873kB/s] 12%|█▏        | 3.05M/26.4M [00:06<00:26, 881kB/s] 12%|█▏        | 3.15M/26.4M [00:06<00:26, 888kB/s] 12%|█▏        | 3.28M/26.4M [00:06<00:25, 908kB/s] 13%|█▎        | 3.41M/26.4M [00:06<00:26, 861kB/s] 13%|█▎        | 3.51M/26.4M [00:06<00:26, 868kB/s] 14%|█▎        | 3.60M/26.4M [00:06<00:26, 874kB/s] 14%|█▍        | 3.70M/26.4M [00:06<00:25, 878kB/s] 15%|█▍        | 3.83M/26.4M [00:06<00:23, 965kB/s] 15%|█▍        | 3.93M/26.4M [00:07<00:23, 943kB/s] 15%|█▌        | 4.03M/26.4M [00:07<00:24, 927kB/s] 16%|█▌        | 4.13M/26.4M [00:07<00:24, 915kB/s] 16%|█▌        | 4.23M/26.4M [00:07<00:24, 906kB/s] 16%|█▋        | 4.36M/26.4M [00:07<00:22, 988kB/s] 17%|█▋        | 4.49M/26.4M [00:07<00:20, 1.05MB/s] 17%|█▋        | 4.62M/26.4M [00:07<00:20, 1.08MB/s] 18%|█▊        | 4.75M/26.4M [00:07<00:25, 858kB/s]  18%|█▊        | 4.88M/26.4M [00:08<00:23, 936kB/s] 19%|█▉        | 5.01M/26.4M [00:08<00:21, 996kB/s] 19%|█▉        | 5.14M/26.4M [00:08<00:20, 1.04MB/s] 20%|█▉        | 5.28M/26.4M [00:08<00:30, 693kB/s]  20%|██        | 5.41M/26.4M [00:08<00:26, 798kB/s] 21%|██        | 5.51M/26.4M [00:08<00:25, 823kB/s] 21%|██        | 5.60M/26.4M [00:08<00:25, 829kB/s] 22%|██▏       | 5.70M/26.4M [00:09<00:24, 843kB/s] 22%|██▏       | 5.80M/26.4M [00:09<00:26, 771kB/s] 22%|██▏       | 5.90M/26.4M [00:09<00:25, 805kB/s] 23%|██▎       | 6.00M/26.4M [00:09<00:28, 712kB/s] 23%|██▎       | 6.09M/26.4M [00:09<00:26, 756kB/s] 23%|██▎       | 6.19M/26.4M [00:09<00:25, 790kB/s] 24%|██▍       | 6.29M/26.4M [00:09<00:24, 817kB/s] 24%|██▍       | 6.39M/26.4M [00:09<00:23, 837kB/s] 25%|██▍       | 6.49M/26.4M [00:10<00:23, 851kB/s] 25%|██▍       | 6.59M/26.4M [00:10<00:23, 861kB/s] 25%|██▌       | 6.68M/26.4M [00:10<00:22, 868kB/s] 26%|██▌       | 6.78M/26.4M [00:10<00:22, 873kB/s] 26%|██▌       | 6.88M/26.4M [00:10<00:22, 876kB/s] 26%|██▋       | 6.98M/26.4M [00:10<00:22, 879kB/s] 27%|██▋       | 7.08M/26.4M [00:10<00:21, 881kB/s] 27%|██▋       | 7.18M/26.4M [00:10<00:21, 881kB/s] 28%|██▊       | 7.27M/26.4M [00:10<00:21, 883kB/s] 28%|██▊       | 7.37M/26.4M [00:11<00:21, 884kB/s] 28%|██▊       | 7.47M/26.4M [00:11<00:21, 884kB/s] 29%|██▊       | 7.57M/26.4M [00:11<00:21, 892kB/s] 29%|██▉       | 7.70M/26.4M [00:11<00:19, 971kB/s] 30%|██▉       | 7.80M/26.4M [00:11<00:19, 946kB/s] 30%|██▉       | 7.90M/26.4M [00:11<00:20, 925kB/s] 30%|███       | 8.00M/26.4M [00:11<00:20, 910kB/s] 31%|███       | 8.13M/26.4M [00:11<00:18, 987kB/s] 31%|███▏      | 8.26M/26.4M [00:11<00:17, 1.04MB/s] 32%|███▏      | 8.39M/26.4M [00:12<00:16, 1.08MB/s] 32%|███▏      | 8.52M/26.4M [00:12<00:21, 850kB/s]  33%|███▎      | 8.65M/26.4M [00:12<00:19, 930kB/s] 33%|███▎      | 8.78M/26.4M [00:12<00:17, 992kB/s] 34%|███▎      | 8.91M/26.4M [00:12<00:16, 1.04MB/s] 34%|███▍      | 9.04M/26.4M [00:12<00:20, 849kB/s]  35%|███▍      | 9.18M/26.4M [00:12<00:18, 918kB/s] 35%|███▌      | 9.31M/26.4M [00:13<00:17, 981kB/s] 36%|███▌      | 9.44M/26.4M [00:13<00:16, 1.03MB/s] 36%|███▌      | 9.57M/26.4M [00:13<00:18, 896kB/s]  37%|███▋      | 9.70M/26.4M [00:13<00:18, 898kB/s] 37%|███▋      | 9.80M/26.4M [00:13<00:18, 893kB/s] 37%|███▋      | 9.90M/26.4M [00:13<00:18, 889kB/s] 38%|███▊      | 10.0M/26.4M [00:13<00:16, 965kB/s] 38%|███▊      | 10.2M/26.4M [00:13<00:15, 1.02MB/s] 39%|███▉      | 10.3M/26.4M [00:14<00:15, 1.06MB/s] 39%|███▉      | 10.4M/26.4M [00:14<00:17, 936kB/s]  40%|███▉      | 10.6M/26.4M [00:14<00:17, 901kB/s] 40%|████      | 10.6M/26.4M [00:14<00:17, 895kB/s] 41%|████      | 10.8M/26.4M [00:14<00:16, 967kB/s] 41%|████▏     | 10.9M/26.4M [00:14<00:15, 1.02MB/s] 42%|████▏     | 11.0M/26.4M [00:14<00:14, 1.06MB/s] 42%|████▏     | 11.2M/26.4M [00:14<00:13, 1.10MB/s] 43%|████▎     | 11.3M/26.4M [00:15<00:14, 1.07MB/s] 43%|████▎     | 11.4M/26.4M [00:15<00:15, 972kB/s]  44%|████▍     | 11.6M/26.4M [00:15<00:15, 932kB/s] 44%|████▍     | 11.7M/26.4M [00:15<00:14, 993kB/s] 45%|████▍     | 11.8M/26.4M [00:15<00:14, 1.04MB/s] 45%|████▌     | 12.0M/26.4M [00:15<00:13, 1.07MB/s] 46%|████▌     | 12.1M/26.4M [00:15<00:13, 1.10MB/s] 46%|████▋     | 12.2M/26.4M [00:15<00:12, 1.12MB/s] 47%|████▋     | 12.4M/26.4M [00:16<00:12, 1.13MB/s] 47%|████▋     | 12.5M/26.4M [00:16<00:12, 1.14MB/s] 48%|████▊     | 12.6M/26.4M [00:16<00:11, 1.15MB/s] 48%|████▊     | 12.7M/26.4M [00:16<00:11, 1.16MB/s] 49%|████▊     | 12.9M/26.4M [00:16<00:11, 1.16MB/s] 49%|████▉     | 13.0M/26.4M [00:16<00:11, 1.16MB/s] 50%|████▉     | 13.1M/26.4M [00:16<00:11, 1.16MB/s] 50%|█████     | 13.3M/26.4M [00:16<00:11, 1.16MB/s] 51%|█████     | 13.4M/26.4M [00:17<00:22, 583kB/s]  51%|█████     | 13.5M/26.4M [00:17<00:34, 379kB/s] 51%|█████▏    | 13.6M/26.4M [00:18<00:30, 426kB/s] 52%|█████▏    | 13.7M/26.4M [00:18<00:23, 541kB/s] 52%|█████▏    | 13.8M/26.4M [00:18<00:20, 604kB/s] 53%|█████▎    | 14.0M/26.4M [00:18<00:17, 722kB/s] 53%|█████▎    | 14.1M/26.4M [00:18<00:16, 761kB/s] 54%|█████▎    | 14.2M/26.4M [00:18<00:14, 866kB/s] 54%|█████▍    | 14.3M/26.4M [00:18<00:12, 950kB/s] 55%|█████▍    | 14.5M/26.4M [00:18<00:10, 1.09MB/s] 55%|█████▌    | 14.6M/26.4M [00:18<00:10, 1.12MB/s] 56%|█████▌    | 14.8M/26.4M [00:18<00:09, 1.22MB/s] 57%|█████▋    | 14.9M/26.4M [00:19<00:12, 916kB/s]  57%|█████▋    | 15.1M/26.4M [00:19<00:14, 758kB/s] 57%|█████▋    | 15.2M/26.4M [00:19<00:16, 693kB/s] 58%|█████▊    | 15.3M/26.4M [00:19<00:15, 732kB/s] 58%|█████▊    | 15.4M/26.4M [00:19<00:13, 833kB/s] 59%|█████▉    | 15.5M/26.4M [00:20<00:11, 917kB/s] 59%|█████▉    | 15.7M/26.4M [00:20<00:10, 983kB/s] 60%|█████▉    | 15.8M/26.4M [00:20<00:10, 1.03MB/s] 60%|██████    | 15.9M/26.4M [00:20<00:09, 1.07MB/s] 61%|██████    | 16.1M/26.4M [00:20<00:09, 1.11MB/s] 61%|██████▏   | 16.2M/26.4M [00:20<00:10, 984kB/s]  62%|██████▏   | 16.3M/26.4M [00:20<00:10, 946kB/s] 62%|██████▏   | 16.4M/26.4M [00:21<00:12, 800kB/s] 63%|██████▎   | 16.5M/26.4M [00:21<00:12, 817kB/s] 63%|██████▎   | 16.6M/26.4M [00:21<00:11, 830kB/s] 63%|██████▎   | 16.7M/26.4M [00:21<00:12, 755kB/s] 64%|██████▎   | 16.8M/26.4M [00:21<00:13, 698kB/s] 64%|██████▍   | 16.9M/26.4M [00:21<00:15, 608kB/s] 64%|██████▍   | 17.0M/26.4M [00:21<00:14, 664kB/s] 65%|██████▍   | 17.1M/26.4M [00:22<00:15, 583kB/s] 65%|██████▌   | 17.2M/26.4M [00:22<00:15, 586kB/s] 65%|██████▌   | 17.3M/26.4M [00:22<00:15, 589kB/s] 66%|██████▌   | 17.3M/26.4M [00:22<00:15, 591kB/s] 66%|██████▌   | 17.4M/26.4M [00:22<00:16, 553kB/s] 66%|██████▌   | 17.5M/26.4M [00:22<00:15, 566kB/s] 66%|██████▋   | 17.5M/26.4M [00:22<00:15, 572kB/s] 67%|██████▋   | 17.6M/26.4M [00:22<00:17, 507kB/s] 67%|██████▋   | 17.7M/26.4M [00:23<00:17, 504kB/s] 67%|██████▋   | 17.7M/26.4M [00:23<00:16, 528kB/s] 67%|██████▋   | 17.8M/26.4M [00:23<00:15, 547kB/s] 68%|██████▊   | 17.9M/26.4M [00:23<00:15, 561kB/s] 68%|██████▊   | 17.9M/26.4M [00:23<00:14, 571kB/s] 68%|██████▊   | 18.0M/26.4M [00:23<00:14, 578kB/s] 68%|██████▊   | 18.1M/26.4M [00:23<00:14, 584kB/s] 69%|██████▊   | 18.1M/26.4M [00:23<00:14, 588kB/s] 69%|██████▉   | 18.2M/26.4M [00:23<00:13, 590kB/s] 69%|██████▉   | 18.3M/26.4M [00:24<00:13, 592kB/s] 69%|██████▉   | 18.3M/26.4M [00:24<00:13, 593kB/s] 70%|██████▉   | 18.4M/26.4M [00:24<00:13, 594kB/s] 70%|██████▉   | 18.4M/26.4M [00:24<00:13, 595kB/s] 70%|███████   | 18.5M/26.4M [00:24<00:13, 595kB/s] 70%|███████   | 18.6M/26.4M [00:24<00:11, 684kB/s] 71%|███████   | 18.7M/26.4M [00:24<00:10, 746kB/s] 71%|███████   | 18.8M/26.4M [00:24<00:12, 606kB/s] 71%|███████▏  | 18.9M/26.4M [00:25<00:12, 602kB/s] 72%|███████▏  | 19.0M/26.4M [00:25<00:11, 677kB/s] 72%|███████▏  | 19.1M/26.4M [00:25<00:10, 735kB/s] 73%|███████▎  | 19.2M/26.4M [00:25<00:10, 711kB/s] 73%|███████▎  | 19.3M/26.4M [00:25<00:11, 645kB/s] 73%|███████▎  | 19.4M/26.4M [00:25<00:10, 704kB/s] 74%|███████▎  | 19.5M/26.4M [00:25<00:09, 752kB/s] 74%|███████▍  | 19.6M/26.4M [00:26<00:10, 681kB/s] 74%|███████▍  | 19.7M/26.4M [00:26<00:10, 664kB/s] 75%|███████▍  | 19.8M/26.4M [00:26<00:09, 718kB/s] 75%|███████▌  | 19.9M/26.4M [00:26<00:08, 762kB/s] 76%|███████▌  | 20.0M/26.4M [00:26<00:08, 795kB/s] 76%|███████▌  | 20.1M/26.4M [00:26<00:07, 798kB/s] 76%|███████▋  | 20.2M/26.4M [00:26<00:09, 658kB/s] 77%|███████▋  | 20.3M/26.4M [00:26<00:08, 713kB/s] 77%|███████▋  | 20.3M/26.4M [00:27<00:08, 757kB/s] 77%|███████▋  | 20.4M/26.4M [00:27<00:07, 791kB/s] 78%|███████▊  | 20.5M/26.4M [00:27<00:07, 815kB/s] 78%|███████▊  | 20.6M/26.4M [00:27<00:06, 834kB/s] 79%|███████▊  | 20.7M/26.4M [00:27<00:06, 849kB/s] 79%|███████▉  | 20.8M/26.4M [00:27<00:06, 859kB/s] 79%|███████▉  | 20.9M/26.4M [00:27<00:06, 823kB/s] 80%|███████▉  | 21.0M/26.4M [00:27<00:07, 764kB/s] 80%|███████▉  | 21.1M/26.4M [00:28<00:06, 802kB/s] 80%|████████  | 21.2M/26.4M [00:28<00:06, 831kB/s] 81%|████████  | 21.3M/26.4M [00:28<00:06, 735kB/s] 81%|████████  | 21.4M/26.4M [00:28<00:06, 774kB/s] 81%|████████▏ | 21.5M/26.4M [00:28<00:06, 803kB/s] 82%|████████▏ | 21.7M/26.4M [00:28<00:05, 907kB/s] 82%|████████▏ | 21.8M/26.4M [00:28<00:05, 899kB/s] 83%|████████▎ | 21.9M/26.4M [00:28<00:05, 893kB/s] 83%|████████▎ | 22.0M/26.4M [00:28<00:05, 888kB/s] 84%|████████▎ | 22.1M/26.4M [00:29<00:04, 970kB/s] 84%|████████▍ | 22.2M/26.4M [00:29<00:04, 942kB/s] 84%|████████▍ | 22.3M/26.4M [00:29<00:05, 800kB/s] 85%|████████▍ | 22.4M/26.4M [00:29<00:04, 827kB/s] 85%|████████▌ | 22.5M/26.4M [00:29<00:04, 929kB/s] 86%|████████▌ | 22.6M/26.4M [00:29<00:04, 921kB/s] 86%|████████▌ | 22.7M/26.4M [00:29<00:04, 914kB/s] 86%|████████▋ | 22.8M/26.4M [00:29<00:03, 909kB/s] 87%|████████▋ | 22.9M/26.4M [00:30<00:03, 905kB/s] 87%|████████▋ | 23.0M/26.4M [00:30<00:03, 902kB/s] 87%|████████▋ | 23.1M/26.4M [00:30<00:03, 900kB/s] 88%|████████▊ | 23.2M/26.4M [00:30<00:03, 899kB/s] 88%|████████▊ | 23.3M/26.4M [00:30<00:03, 898kB/s] 89%|████████▊ | 23.4M/26.4M [00:30<00:03, 897kB/s] 89%|████████▉ | 23.5M/26.4M [00:30<00:02, 985kB/s] 90%|████████▉ | 23.7M/26.4M [00:30<00:02, 1.05MB/s] 90%|█████████ | 23.8M/26.4M [00:30<00:02, 1.01MB/s] 91%|█████████ | 23.9M/26.4M [00:31<00:02, 1.06MB/s] 91%|█████████ | 24.1M/26.4M [00:31<00:02, 1.07MB/s] 92%|█████████▏| 24.2M/26.4M [00:31<00:02, 1.10MB/s] 92%|█████████▏| 24.3M/26.4M [00:31<00:01, 1.13MB/s] 93%|█████████▎| 24.4M/26.4M [00:31<00:02, 963kB/s]  93%|█████████▎| 24.6M/26.4M [00:31<00:01, 1.02MB/s] 94%|█████████▎| 24.7M/26.4M [00:31<00:01, 1.07MB/s] 94%|█████████▍| 24.8M/26.4M [00:31<00:01, 1.10MB/s] 95%|█████████▍| 25.0M/26.4M [00:32<00:01, 1.12MB/s] 95%|█████████▍| 25.1M/26.4M [00:32<00:01, 1.14MB/s] 95%|█████████▌| 25.2M/26.4M [00:32<00:01, 1.15MB/s] 96%|█████████▌| 25.4M/26.4M [00:32<00:00, 1.16MB/s] 96%|█████████▋| 25.5M/26.4M [00:32<00:00, 1.17MB/s] 97%|█████████▋| 25.6M/26.4M [00:32<00:00, 1.17MB/s] 97%|█████████▋| 25.8M/26.4M [00:32<00:00, 1.17MB/s] 98%|█████████▊| 25.9M/26.4M [00:32<00:00, 1.17MB/s] 98%|█████████▊| 26.0M/26.4M [00:32<00:00, 1.18MB/s] 99%|█████████▉| 26.1M/26.4M [00:33<00:00, 1.19MB/s] 99%|█████████▉| 26.3M/26.4M [00:33<00:00, 1.18MB/s]100%|█████████▉| 26.4M/26.4M [00:33<00:00, 1.13MB/s]100%|██████████| 26.4M/26.4M [00:33<00:00, 795kB/s] 
+Extracting ./data/FashionMNIST/raw/train-images-idx3-ubyte.gz to ./data/FashionMNIST/raw
+
+Downloading http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-labels-idx1-ubyte.gz
+Downloading http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-labels-idx1-ubyte.gz to ./data/FashionMNIST/raw/train-labels-idx1-ubyte.gz
+  0%|          | 0.00/29.5k [00:00<?, ?B/s]100%|██████████| 29.5k/29.5k [00:00<00:00, 294kB/s]100%|██████████| 29.5k/29.5k [00:00<00:00, 293kB/s]
+Extracting ./data/FashionMNIST/raw/train-labels-idx1-ubyte.gz to ./data/FashionMNIST/raw
+
+Downloading http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-images-idx3-ubyte.gz
+Downloading http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-images-idx3-ubyte.gz to ./data/FashionMNIST/raw/t10k-images-idx3-ubyte.gz
+  0%|          | 0.00/4.42M [00:00<?, ?B/s]  1%|          | 32.8k/4.42M [00:00<00:15, 284kB/s]  1%|▏         | 65.5k/4.42M [00:00<00:14, 292kB/s]  2%|▏         | 98.3k/4.42M [00:00<00:14, 293kB/s]  4%|▍         | 197k/4.42M [00:00<00:08, 472kB/s]   7%|▋         | 295k/4.42M [00:00<00:06, 615kB/s]  9%|▉         | 393k/4.42M [00:00<00:05, 709kB/s] 12%|█▏        | 524k/4.42M [00:00<00:04, 865kB/s] 16%|█▌        | 688k/4.42M [00:00<00:03, 1.07MB/s] 19%|█▊        | 819k/4.42M [00:01<00:08, 440kB/s]  21%|██        | 918k/4.42M [00:01<00:08, 394kB/s] 22%|██▏       | 983k/4.42M [00:02<00:09, 371kB/s] 24%|██▎       | 1.05M/4.42M [00:02<00:08, 405kB/s] 25%|██▌       | 1.11M/4.42M [00:02<00:07, 437kB/s] 27%|██▋       | 1.21M/4.42M [00:02<00:07, 442kB/s] 31%|███       | 1.38M/4.42M [00:02<00:04, 646kB/s] 33%|███▎      | 1.47M/4.42M [00:02<00:04, 701kB/s] 36%|███▌      | 1.57M/4.42M [00:02<00:03, 749kB/s] 38%|███▊      | 1.67M/4.42M [00:03<00:03, 730kB/s] 40%|████      | 1.77M/4.42M [00:03<00:03, 773kB/s] 42%|████▏     | 1.87M/4.42M [00:03<00:03, 808kB/s] 44%|████▍     | 1.97M/4.42M [00:03<00:02, 834kB/s] 47%|████▋     | 2.10M/4.42M [00:03<00:02, 938kB/s] 50%|████▉     | 2.20M/4.42M [00:03<00:02, 928kB/s] 52%|█████▏    | 2.29M/4.42M [00:03<00:02, 922kB/s] 54%|█████▍    | 2.39M/4.42M [00:03<00:02, 916kB/s] 57%|█████▋    | 2.52M/4.42M [00:03<00:01, 1.00MB/s] 60%|██████    | 2.65M/4.42M [00:04<00:01, 908kB/s]  63%|██████▎   | 2.79M/4.42M [00:04<00:01, 941kB/s] 65%|██████▌   | 2.88M/4.42M [00:04<00:01, 930kB/s] 68%|██████▊   | 3.01M/4.42M [00:04<00:01, 1.00MB/s] 71%|███████   | 3.15M/4.42M [00:04<00:01, 1.06MB/s] 74%|███████▍  | 3.28M/4.42M [00:04<00:01, 1.10MB/s] 77%|███████▋  | 3.41M/4.42M [00:04<00:00, 1.06MB/s] 80%|████████  | 3.54M/4.42M [00:04<00:00, 1.10MB/s] 83%|████████▎ | 3.67M/4.42M [00:04<00:00, 1.13MB/s] 86%|████████▌ | 3.80M/4.42M [00:05<00:00, 1.15MB/s] 89%|████████▉ | 3.93M/4.42M [00:05<00:00, 1.16MB/s] 92%|█████████▏| 4.06M/4.42M [00:05<00:00, 1.02MB/s] 95%|█████████▍| 4.19M/4.42M [00:05<00:00, 1.00MB/s] 98%|█████████▊| 4.33M/4.42M [00:05<00:00, 1.05MB/s]100%|██████████| 4.42M/4.42M [00:05<00:00, 782kB/s] 
+Extracting ./data/FashionMNIST/raw/t10k-images-idx3-ubyte.gz to ./data/FashionMNIST/raw
+
+Downloading http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-labels-idx1-ubyte.gz
+Downloading http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-labels-idx1-ubyte.gz to ./data/FashionMNIST/raw/t10k-labels-idx1-ubyte.gz
+  0%|          | 0.00/5.15k [00:00<?, ?B/s]100%|██████████| 5.15k/5.15k [00:00<00:00, 101MB/s]
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to ./weights/hub/checkpoints/resnet18-f37072fd.pth
+Extracting ./data/FashionMNIST/raw/t10k-labels-idx1-ubyte.gz to ./data/FashionMNIST/raw
+
+Files already downloaded and verified
+
+================================================================================
+*** Auto-ML search for backbone=cnn, dataset=A ***
+
+======================================================================
+[AutoML] backbone=cnn, dataset=A, lr=0.001, epochs=6, batch_size=16
+[Data] Dataset A: train=45000, val=5000, test=10000
+  0%|          | 0.00/44.7M [00:00<?, ?B/s] 26%|██▋       | 11.8M/44.7M [00:00<00:00, 123MB/s]100%|█████████▉| 44.6M/44.7M [00:00<00:00, 253MB/s]100%|██████████| 44.7M/44.7M [00:00<00:00, 233MB/s]
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/6 | train_loss=0.9076, train_acc=0.6868, val_loss=0.6410, val_acc=0.7842
+  Epoch 2/6 | train_loss=0.5606, train_acc=0.8117, val_loss=0.4671, val_acc=0.8386
+  Epoch 3/6 | train_loss=0.4360, train_acc=0.8518, val_loss=0.4152, val_acc=0.8646
+  Epoch 4/6 | train_loss=0.3558, train_acc=0.8798, val_loss=0.3984, val_acc=0.8678
+  Epoch 5/6 | train_loss=0.2913, train_acc=0.8999, val_loss=0.3743, val_acc=0.8806
+  Epoch 6/6 | train_loss=0.2419, train_acc=0.9188, val_loss=0.3569, val_acc=0.8834
+  --> Best val_acc for this cfg = 0.8834 | time=319.0s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=A, lr=0.001, epochs=6, batch_size=32
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/6 | train_loss=0.7155, train_acc=0.7564, val_loss=0.4871, val_acc=0.8362
+  Epoch 2/6 | train_loss=0.4495, train_acc=0.8471, val_loss=0.4294, val_acc=0.8592
+  Epoch 3/6 | train_loss=0.3507, train_acc=0.8799, val_loss=0.3764, val_acc=0.8734
+  Epoch 4/6 | train_loss=0.2873, train_acc=0.9008, val_loss=0.3266, val_acc=0.8908
+  Epoch 5/6 | train_loss=0.2394, train_acc=0.9172, val_loss=0.2918, val_acc=0.9042
+  Epoch 6/6 | train_loss=0.1987, train_acc=0.9316, val_loss=0.2788, val_acc=0.9100
+  --> Best val_acc for this cfg = 0.9100 | time=284.1s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=A, lr=0.001, epochs=6, batch_size=64
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/6 | train_loss=0.5949, train_acc=0.7987, val_loss=0.4939, val_acc=0.8340
+  Epoch 2/6 | train_loss=0.3695, train_acc=0.8725, val_loss=0.3573, val_acc=0.8784
+  Epoch 3/6 | train_loss=0.2852, train_acc=0.9031, val_loss=0.3216, val_acc=0.8882
+  Epoch 4/6 | train_loss=0.2340, train_acc=0.9197, val_loss=0.3575, val_acc=0.8844
+  Epoch 5/6 | train_loss=0.1918, train_acc=0.9338, val_loss=0.3264, val_acc=0.8926
+  Epoch 6/6 | train_loss=0.1639, train_acc=0.9446, val_loss=0.3125, val_acc=0.9056
+  --> Best val_acc for this cfg = 0.9056 | time=267.0s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=A, lr=0.001, epochs=10, batch_size=16
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/10 | train_loss=0.8956, train_acc=0.6922, val_loss=0.5926, val_acc=0.8028
+  Epoch 2/10 | train_loss=0.5528, train_acc=0.8143, val_loss=0.5356, val_acc=0.8216
+  Epoch 3/10 | train_loss=0.4344, train_acc=0.8532, val_loss=0.3669, val_acc=0.8796
+  Epoch 4/10 | train_loss=0.3487, train_acc=0.8815, val_loss=0.3632, val_acc=0.8812
+  Epoch 5/10 | train_loss=0.2831, train_acc=0.9026, val_loss=0.3497, val_acc=0.8862
+  Epoch 6/10 | train_loss=0.2375, train_acc=0.9194, val_loss=0.3072, val_acc=0.9026
+  Epoch 7/10 | train_loss=0.1988, train_acc=0.9328, val_loss=0.3238, val_acc=0.8974
+  Epoch 8/10 | train_loss=0.1655, train_acc=0.9439, val_loss=0.3261, val_acc=0.8990
+  Epoch 9/10 | train_loss=0.1444, train_acc=0.9510, val_loss=0.3585, val_acc=0.8984
+  Epoch 10/10 | train_loss=0.1263, train_acc=0.9578, val_loss=0.2877, val_acc=0.9150
+  --> Best val_acc for this cfg = 0.9150 | time=528.5s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=A, lr=0.001, epochs=10, batch_size=32
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/10 | train_loss=0.7045, train_acc=0.7582, val_loss=0.5518, val_acc=0.8230
+  Epoch 2/10 | train_loss=0.4416, train_acc=0.8503, val_loss=0.4180, val_acc=0.8572
+  Epoch 3/10 | train_loss=0.3509, train_acc=0.8809, val_loss=0.3922, val_acc=0.8698
+  Epoch 4/10 | train_loss=0.2853, train_acc=0.9028, val_loss=0.3495, val_acc=0.8896
+  Epoch 5/10 | train_loss=0.2383, train_acc=0.9180, val_loss=0.3358, val_acc=0.8880
+  Epoch 6/10 | train_loss=0.1977, train_acc=0.9332, val_loss=0.3156, val_acc=0.9010
+  Epoch 7/10 | train_loss=0.1695, train_acc=0.9398, val_loss=0.3292, val_acc=0.8964
+  Epoch 8/10 | train_loss=0.1434, train_acc=0.9504, val_loss=0.3098, val_acc=0.9116
+  Epoch 9/10 | train_loss=0.1256, train_acc=0.9572, val_loss=0.2972, val_acc=0.9110
+  Epoch 10/10 | train_loss=0.1081, train_acc=0.9631, val_loss=0.3132, val_acc=0.9082
+  --> Best val_acc for this cfg = 0.9116 | time=473.2s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=A, lr=0.001, epochs=10, batch_size=64
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/10 | train_loss=0.5773, train_acc=0.8034, val_loss=0.6509, val_acc=0.7924
+  Epoch 2/10 | train_loss=0.3563, train_acc=0.8774, val_loss=0.3231, val_acc=0.8870
+  Epoch 3/10 | train_loss=0.2803, train_acc=0.9059, val_loss=0.3321, val_acc=0.8888
+  Epoch 4/10 | train_loss=0.2309, train_acc=0.9195, val_loss=0.3482, val_acc=0.8852
+  Epoch 5/10 | train_loss=0.1927, train_acc=0.9348, val_loss=0.4055, val_acc=0.8740
+  Epoch 6/10 | train_loss=0.1574, train_acc=0.9462, val_loss=0.3380, val_acc=0.8922
+  Epoch 7/10 | train_loss=0.1346, train_acc=0.9542, val_loss=0.2983, val_acc=0.9030
+  Epoch 8/10 | train_loss=0.1224, train_acc=0.9571, val_loss=0.3129, val_acc=0.9064
+  Epoch 9/10 | train_loss=0.1028, train_acc=0.9645, val_loss=0.3539, val_acc=0.8958
+  Epoch 10/10 | train_loss=0.0999, train_acc=0.9666, val_loss=0.3150, val_acc=0.9078
+  --> Best val_acc for this cfg = 0.9078 | time=444.4s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=A, lr=0.001, epochs=15, batch_size=16
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/15 | train_loss=0.8987, train_acc=0.6962, val_loss=0.6739, val_acc=0.7802
+  Epoch 2/15 | train_loss=0.5539, train_acc=0.8155, val_loss=0.4311, val_acc=0.8496
+  Epoch 3/15 | train_loss=0.4330, train_acc=0.8535, val_loss=0.3781, val_acc=0.8734
+  Epoch 4/15 | train_loss=0.3490, train_acc=0.8794, val_loss=0.3630, val_acc=0.8778
+  Epoch 5/15 | train_loss=0.2874, train_acc=0.9026, val_loss=0.3200, val_acc=0.8980
+  Epoch 6/15 | train_loss=0.2349, train_acc=0.9206, val_loss=0.3139, val_acc=0.8976
+  Epoch 7/15 | train_loss=0.2006, train_acc=0.9322, val_loss=0.2901, val_acc=0.9104
+  Epoch 8/15 | train_loss=0.1696, train_acc=0.9422, val_loss=0.2971, val_acc=0.9094
+  Epoch 9/15 | train_loss=0.1453, train_acc=0.9502, val_loss=0.2999, val_acc=0.9056
+  Epoch 10/15 | train_loss=0.1234, train_acc=0.9586, val_loss=0.3275, val_acc=0.9008
+  Epoch 11/15 | train_loss=0.1124, train_acc=0.9622, val_loss=0.3016, val_acc=0.9128
+  Epoch 12/15 | train_loss=0.1025, train_acc=0.9656, val_loss=0.3043, val_acc=0.9118
+  Epoch 13/15 | train_loss=0.0899, train_acc=0.9692, val_loss=0.3326, val_acc=0.9092
+  Epoch 14/15 | train_loss=0.0834, train_acc=0.9716, val_loss=0.2968, val_acc=0.9206
+  Epoch 15/15 | train_loss=0.0705, train_acc=0.9751, val_loss=0.3147, val_acc=0.9090
+  --> Best val_acc for this cfg = 0.9206 | time=792.0s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=A, lr=0.001, epochs=15, batch_size=32
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/15 | train_loss=0.7083, train_acc=0.7583, val_loss=0.6152, val_acc=0.8064
+  Epoch 2/15 | train_loss=0.4396, train_acc=0.8510, val_loss=0.4066, val_acc=0.8606
+  Epoch 3/15 | train_loss=0.3451, train_acc=0.8818, val_loss=0.3592, val_acc=0.8692
+  Epoch 4/15 | train_loss=0.2801, train_acc=0.9030, val_loss=0.3140, val_acc=0.8950
+  Epoch 5/15 | train_loss=0.2336, train_acc=0.9203, val_loss=0.3531, val_acc=0.8850
+  Epoch 6/15 | train_loss=0.1988, train_acc=0.9319, val_loss=0.3271, val_acc=0.8966
+  Epoch 7/15 | train_loss=0.1722, train_acc=0.9409, val_loss=0.3375, val_acc=0.8978
+  Epoch 8/15 | train_loss=0.1463, train_acc=0.9498, val_loss=0.2818, val_acc=0.9150
+  Epoch 9/15 | train_loss=0.1231, train_acc=0.9579, val_loss=0.3095, val_acc=0.9066
+  Epoch 10/15 | train_loss=0.1084, train_acc=0.9632, val_loss=0.3247, val_acc=0.9088
+  Epoch 11/15 | train_loss=0.1002, train_acc=0.9657, val_loss=0.3091, val_acc=0.9122
+  Epoch 12/15 | train_loss=0.0864, train_acc=0.9700, val_loss=0.3162, val_acc=0.9122
+  Epoch 13/15 | train_loss=0.0813, train_acc=0.9726, val_loss=0.3330, val_acc=0.9116
+  Epoch 14/15 | train_loss=0.0711, train_acc=0.9756, val_loss=0.3209, val_acc=0.9166
+  Epoch 15/15 | train_loss=0.0690, train_acc=0.9766, val_loss=0.3673, val_acc=0.9044
+  --> Best val_acc for this cfg = 0.9166 | time=709.7s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=A, lr=0.001, epochs=15, batch_size=64
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/15 | train_loss=0.5876, train_acc=0.7985, val_loss=0.4639, val_acc=0.8404
+  Epoch 2/15 | train_loss=0.3550, train_acc=0.8803, val_loss=0.3754, val_acc=0.8758
+  Epoch 3/15 | train_loss=0.2843, train_acc=0.9027, val_loss=0.3151, val_acc=0.8924
+  Epoch 4/15 | train_loss=0.2215, train_acc=0.9235, val_loss=0.3903, val_acc=0.8710
+  Epoch 5/15 | train_loss=0.1920, train_acc=0.9338, val_loss=0.3507, val_acc=0.8894
+  Epoch 6/15 | train_loss=0.1588, train_acc=0.9458, val_loss=0.2784, val_acc=0.9138
+  Epoch 7/15 | train_loss=0.1378, train_acc=0.9520, val_loss=0.3768, val_acc=0.8910
+  Epoch 8/15 | train_loss=0.1296, train_acc=0.9553, val_loss=0.3358, val_acc=0.8976
+  Epoch 9/15 | train_loss=0.1085, train_acc=0.9637, val_loss=0.3001, val_acc=0.9124
+  Epoch 10/15 | train_loss=0.0887, train_acc=0.9689, val_loss=0.2837, val_acc=0.9174
+  Epoch 11/15 | train_loss=0.0829, train_acc=0.9715, val_loss=0.3387, val_acc=0.9104
+  Epoch 12/15 | train_loss=0.0822, train_acc=0.9723, val_loss=0.3305, val_acc=0.9080
+  Epoch 13/15 | train_loss=0.0745, train_acc=0.9738, val_loss=0.2810, val_acc=0.9246
+  Epoch 14/15 | train_loss=0.0588, train_acc=0.9799, val_loss=0.3715, val_acc=0.9062
+  Epoch 15/15 | train_loss=0.0564, train_acc=0.9807, val_loss=0.3187, val_acc=0.9140
+  --> Best val_acc for this cfg = 0.9246 | time=666.6s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=A, lr=0.0005, epochs=6, batch_size=16
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/6 | train_loss=0.6501, train_acc=0.7779, val_loss=0.4373, val_acc=0.8556
+  Epoch 2/6 | train_loss=0.4243, train_acc=0.8575, val_loss=0.3673, val_acc=0.8746
+  Epoch 3/6 | train_loss=0.3353, train_acc=0.8873, val_loss=0.3125, val_acc=0.8906
+  Epoch 4/6 | train_loss=0.2660, train_acc=0.9093, val_loss=0.2963, val_acc=0.9026
+  Epoch 5/6 | train_loss=0.2232, train_acc=0.9242, val_loss=0.2792, val_acc=0.9088
+  Epoch 6/6 | train_loss=0.1824, train_acc=0.9376, val_loss=0.2778, val_acc=0.9074
+  --> Best val_acc for this cfg = 0.9088 | time=317.2s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=A, lr=0.0005, epochs=6, batch_size=32
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/6 | train_loss=0.5262, train_acc=0.8202, val_loss=0.3802, val_acc=0.8704
+  Epoch 2/6 | train_loss=0.3320, train_acc=0.8881, val_loss=0.2967, val_acc=0.8986
+  Epoch 3/6 | train_loss=0.2610, train_acc=0.9108, val_loss=0.2882, val_acc=0.8976
+  Epoch 4/6 | train_loss=0.2153, train_acc=0.9255, val_loss=0.2814, val_acc=0.9034
+  Epoch 5/6 | train_loss=0.1748, train_acc=0.9404, val_loss=0.2629, val_acc=0.9154
+  Epoch 6/6 | train_loss=0.1497, train_acc=0.9483, val_loss=0.2986, val_acc=0.9080
+  --> Best val_acc for this cfg = 0.9154 | time=284.2s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=A, lr=0.0005, epochs=6, batch_size=64
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/6 | train_loss=0.4391, train_acc=0.8488, val_loss=0.4098, val_acc=0.8628
+  Epoch 2/6 | train_loss=0.2682, train_acc=0.9081, val_loss=0.3291, val_acc=0.8902
+  Epoch 3/6 | train_loss=0.2031, train_acc=0.9287, val_loss=0.2809, val_acc=0.9042
+  Epoch 4/6 | train_loss=0.1622, train_acc=0.9438, val_loss=0.2370, val_acc=0.9212
+  Epoch 5/6 | train_loss=0.1390, train_acc=0.9523, val_loss=0.2301, val_acc=0.9282
+  Epoch 6/6 | train_loss=0.1281, train_acc=0.9561, val_loss=0.2751, val_acc=0.9114
+  --> Best val_acc for this cfg = 0.9282 | time=266.9s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=A, lr=0.0005, epochs=10, batch_size=16
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/10 | train_loss=0.6517, train_acc=0.7801, val_loss=0.4877, val_acc=0.8336
+  Epoch 2/10 | train_loss=0.4269, train_acc=0.8551, val_loss=0.4674, val_acc=0.8384
+  Epoch 3/10 | train_loss=0.3327, train_acc=0.8872, val_loss=0.3548, val_acc=0.8810
+  Epoch 4/10 | train_loss=0.2675, train_acc=0.9082, val_loss=0.2899, val_acc=0.9074
+  Epoch 5/10 | train_loss=0.2206, train_acc=0.9248, val_loss=0.2671, val_acc=0.9092
+  Epoch 6/10 | train_loss=0.1847, train_acc=0.9375, val_loss=0.3071, val_acc=0.9026
+  Epoch 7/10 | train_loss=0.1550, train_acc=0.9465, val_loss=0.2596, val_acc=0.9182
+  Epoch 8/10 | train_loss=0.1271, train_acc=0.9580, val_loss=0.2675, val_acc=0.9168
+  Epoch 9/10 | train_loss=0.1203, train_acc=0.9589, val_loss=0.3185, val_acc=0.9090
+  Epoch 10/10 | train_loss=0.1021, train_acc=0.9641, val_loss=0.2857, val_acc=0.9166
+  --> Best val_acc for this cfg = 0.9182 | time=528.7s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=A, lr=0.0005, epochs=10, batch_size=32
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/10 | train_loss=0.5284, train_acc=0.8192, val_loss=0.4126, val_acc=0.8548
+  Epoch 2/10 | train_loss=0.3331, train_acc=0.8862, val_loss=0.3238, val_acc=0.8894
+  Epoch 3/10 | train_loss=0.2614, train_acc=0.9097, val_loss=0.3343, val_acc=0.8864
+  Epoch 4/10 | train_loss=0.2115, train_acc=0.9275, val_loss=0.2887, val_acc=0.9020
+  Epoch 5/10 | train_loss=0.1798, train_acc=0.9398, val_loss=0.2693, val_acc=0.9088
+  Epoch 6/10 | train_loss=0.1473, train_acc=0.9489, val_loss=0.2578, val_acc=0.9208
+  Epoch 7/10 | train_loss=0.1276, train_acc=0.9561, val_loss=0.2330, val_acc=0.9262
+  Epoch 8/10 | train_loss=0.1085, train_acc=0.9621, val_loss=0.2341, val_acc=0.9246
+  Epoch 9/10 | train_loss=0.0965, train_acc=0.9673, val_loss=0.2728, val_acc=0.9190
+  Epoch 10/10 | train_loss=0.0863, train_acc=0.9697, val_loss=0.2684, val_acc=0.9212
+  --> Best val_acc for this cfg = 0.9262 | time=473.4s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=A, lr=0.0005, epochs=10, batch_size=64
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/10 | train_loss=0.4427, train_acc=0.8477, val_loss=0.3784, val_acc=0.8708
+  Epoch 2/10 | train_loss=0.2687, train_acc=0.9082, val_loss=0.3356, val_acc=0.8862
+  Epoch 3/10 | train_loss=0.2145, train_acc=0.9263, val_loss=0.2685, val_acc=0.9100
+  Epoch 4/10 | train_loss=0.1612, train_acc=0.9449, val_loss=0.2761, val_acc=0.9082
+  Epoch 5/10 | train_loss=0.1443, train_acc=0.9501, val_loss=0.2157, val_acc=0.9272
+  Epoch 6/10 | train_loss=0.1140, train_acc=0.9600, val_loss=0.3187, val_acc=0.9044
+  Epoch 7/10 | train_loss=0.1061, train_acc=0.9640, val_loss=0.2468, val_acc=0.9256
+  Epoch 8/10 | train_loss=0.0992, train_acc=0.9646, val_loss=0.2878, val_acc=0.9118
+  Epoch 9/10 | train_loss=0.0754, train_acc=0.9742, val_loss=0.2399, val_acc=0.9256
+  Epoch 10/10 | train_loss=0.0734, train_acc=0.9750, val_loss=0.2469, val_acc=0.9310
+  --> Best val_acc for this cfg = 0.9310 | time=445.2s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=A, lr=0.0005, epochs=15, batch_size=16
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/15 | train_loss=0.6398, train_acc=0.7820, val_loss=0.4356, val_acc=0.8532
+  Epoch 2/15 | train_loss=0.4173, train_acc=0.8588, val_loss=0.3580, val_acc=0.8800
+  Epoch 3/15 | train_loss=0.3285, train_acc=0.8886, val_loss=0.3232, val_acc=0.8856
+  Epoch 4/15 | train_loss=0.2673, train_acc=0.9105, val_loss=0.3138, val_acc=0.8960
+  Epoch 5/15 | train_loss=0.2201, train_acc=0.9244, val_loss=0.3013, val_acc=0.9088
+  Epoch 6/15 | train_loss=0.1802, train_acc=0.9394, val_loss=0.2606, val_acc=0.9132
+  Epoch 7/15 | train_loss=0.1548, train_acc=0.9475, val_loss=0.2914, val_acc=0.9140
+  Epoch 8/15 | train_loss=0.1355, train_acc=0.9527, val_loss=0.3038, val_acc=0.9098
+  Epoch 9/15 | train_loss=0.1194, train_acc=0.9592, val_loss=0.2691, val_acc=0.9206
+  Epoch 10/15 | train_loss=0.1047, train_acc=0.9641, val_loss=0.2625, val_acc=0.9204
+  Epoch 11/15 | train_loss=0.0901, train_acc=0.9698, val_loss=0.2986, val_acc=0.9140
+  Epoch 12/15 | train_loss=0.0852, train_acc=0.9718, val_loss=0.3089, val_acc=0.9148
+  Epoch 13/15 | train_loss=0.0763, train_acc=0.9743, val_loss=0.2921, val_acc=0.9218
+  Epoch 14/15 | train_loss=0.0683, train_acc=0.9761, val_loss=0.3186, val_acc=0.9094
+  Epoch 15/15 | train_loss=0.0671, train_acc=0.9774, val_loss=0.3009, val_acc=0.9212
+  --> Best val_acc for this cfg = 0.9218 | time=793.4s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=A, lr=0.0005, epochs=15, batch_size=32
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/15 | train_loss=0.5215, train_acc=0.8209, val_loss=0.4603, val_acc=0.8418
+  Epoch 2/15 | train_loss=0.3271, train_acc=0.8894, val_loss=0.3349, val_acc=0.8886
+  Epoch 3/15 | train_loss=0.2577, train_acc=0.9138, val_loss=0.3308, val_acc=0.8938
+  Epoch 4/15 | train_loss=0.2139, train_acc=0.9272, val_loss=0.2757, val_acc=0.9116
+  Epoch 5/15 | train_loss=0.1801, train_acc=0.9382, val_loss=0.2514, val_acc=0.9144
+  Epoch 6/15 | train_loss=0.1519, train_acc=0.9472, val_loss=0.2880, val_acc=0.9046
+  Epoch 7/15 | train_loss=0.1224, train_acc=0.9583, val_loss=0.2396, val_acc=0.9234
+  Epoch 8/15 | train_loss=0.1167, train_acc=0.9599, val_loss=0.2466, val_acc=0.9216
+  Epoch 9/15 | train_loss=0.0931, train_acc=0.9687, val_loss=0.2401, val_acc=0.9260
+  Epoch 10/15 | train_loss=0.0867, train_acc=0.9707, val_loss=0.2769, val_acc=0.9180
+  Epoch 11/15 | train_loss=0.0767, train_acc=0.9741, val_loss=0.2877, val_acc=0.9166
+  Epoch 12/15 | train_loss=0.0693, train_acc=0.9770, val_loss=0.2359, val_acc=0.9336
+  Epoch 13/15 | train_loss=0.0658, train_acc=0.9774, val_loss=0.2649, val_acc=0.9252
+  Epoch 14/15 | train_loss=0.0628, train_acc=0.9785, val_loss=0.2900, val_acc=0.9206
+  Epoch 15/15 | train_loss=0.0527, train_acc=0.9819, val_loss=0.2908, val_acc=0.9150
+  --> Best val_acc for this cfg = 0.9336 | time=710.5s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=A, lr=0.0005, epochs=15, batch_size=64
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/15 | train_loss=0.4400, train_acc=0.8489, val_loss=0.3216, val_acc=0.8960
+  Epoch 2/15 | train_loss=0.2648, train_acc=0.9092, val_loss=0.3019, val_acc=0.8978
+  Epoch 3/15 | train_loss=0.2064, train_acc=0.9286, val_loss=0.3087, val_acc=0.8960
+  Epoch 4/15 | train_loss=0.1661, train_acc=0.9418, val_loss=0.2672, val_acc=0.9126
+  Epoch 5/15 | train_loss=0.1356, train_acc=0.9530, val_loss=0.2864, val_acc=0.9062
+  Epoch 6/15 | train_loss=0.1148, train_acc=0.9603, val_loss=0.2656, val_acc=0.9152
+  Epoch 7/15 | train_loss=0.1081, train_acc=0.9623, val_loss=0.2483, val_acc=0.9250
+  Epoch 8/15 | train_loss=0.0910, train_acc=0.9690, val_loss=0.2655, val_acc=0.9190
+  Epoch 9/15 | train_loss=0.0787, train_acc=0.9738, val_loss=0.2359, val_acc=0.9302
+  Epoch 10/15 | train_loss=0.0691, train_acc=0.9761, val_loss=0.2684, val_acc=0.9248
+  Epoch 11/15 | train_loss=0.0691, train_acc=0.9758, val_loss=0.2407, val_acc=0.9294
+  Epoch 12/15 | train_loss=0.0538, train_acc=0.9810, val_loss=0.2690, val_acc=0.9250
+  Epoch 13/15 | train_loss=0.0531, train_acc=0.9818, val_loss=0.3020, val_acc=0.9234
+  Epoch 14/15 | train_loss=0.0496, train_acc=0.9829, val_loss=0.2472, val_acc=0.9336
+  Epoch 15/15 | train_loss=0.0529, train_acc=0.9816, val_loss=0.2967, val_acc=0.9232
+  --> Best val_acc for this cfg = 0.9336 | time=667.5s
+
+######################################################################
+[AutoML DONE] Best cfg for backbone=cnn, dataset=A: {'lr': 0.0005, 'epochs': 15, 'batch_size': 32}, best_val_acc=0.9336
+
+================================================================================
+*** Auto-ML search for backbone=cnn, dataset=B ***
+
+======================================================================
+[AutoML] backbone=cnn, dataset=B, lr=0.001, epochs=6, batch_size=16
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/6 | train_loss=0.3937, train_acc=0.8607, val_loss=0.2578, val_acc=0.9047
+  Epoch 2/6 | train_loss=0.2653, train_acc=0.9038, val_loss=0.2338, val_acc=0.9167
+  Epoch 3/6 | train_loss=0.2280, train_acc=0.9181, val_loss=0.2441, val_acc=0.9135
+  Epoch 4/6 | train_loss=0.1975, train_acc=0.9285, val_loss=0.1912, val_acc=0.9322
+  Epoch 5/6 | train_loss=0.1734, train_acc=0.9374, val_loss=0.1903, val_acc=0.9330
+  Epoch 6/6 | train_loss=0.1490, train_acc=0.9463, val_loss=0.1875, val_acc=0.9350
+  --> Best val_acc for this cfg = 0.9350 | time=380.3s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=B, lr=0.001, epochs=6, batch_size=32
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/6 | train_loss=0.3488, train_acc=0.8752, val_loss=0.3040, val_acc=0.8870
+  Epoch 2/6 | train_loss=0.2452, train_acc=0.9121, val_loss=0.2351, val_acc=0.9172
+  Epoch 3/6 | train_loss=0.2111, train_acc=0.9237, val_loss=0.2006, val_acc=0.9245
+  Epoch 4/6 | train_loss=0.1818, train_acc=0.9334, val_loss=0.1993, val_acc=0.9300
+  Epoch 5/6 | train_loss=0.1608, train_acc=0.9405, val_loss=0.1972, val_acc=0.9322
+  Epoch 6/6 | train_loss=0.1427, train_acc=0.9472, val_loss=0.1891, val_acc=0.9327
+  --> Best val_acc for this cfg = 0.9327 | time=340.2s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=B, lr=0.001, epochs=6, batch_size=64
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/6 | train_loss=0.3210, train_acc=0.8848, val_loss=0.2634, val_acc=0.9095
+  Epoch 2/6 | train_loss=0.2258, train_acc=0.9174, val_loss=0.2246, val_acc=0.9167
+  Epoch 3/6 | train_loss=0.1942, train_acc=0.9290, val_loss=0.2353, val_acc=0.9128
+  Epoch 4/6 | train_loss=0.1711, train_acc=0.9380, val_loss=0.2094, val_acc=0.9215
+  Epoch 5/6 | train_loss=0.1550, train_acc=0.9429, val_loss=0.1830, val_acc=0.9363
+  Epoch 6/6 | train_loss=0.1373, train_acc=0.9496, val_loss=0.1739, val_acc=0.9398
+  --> Best val_acc for this cfg = 0.9398 | time=319.8s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=B, lr=0.001, epochs=10, batch_size=16
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/10 | train_loss=0.3917, train_acc=0.8610, val_loss=0.2949, val_acc=0.8940
+  Epoch 2/10 | train_loss=0.2657, train_acc=0.9043, val_loss=0.2361, val_acc=0.9155
+  Epoch 3/10 | train_loss=0.2238, train_acc=0.9204, val_loss=0.1984, val_acc=0.9290
+  Epoch 4/10 | train_loss=0.1964, train_acc=0.9291, val_loss=0.1900, val_acc=0.9302
+  Epoch 5/10 | train_loss=0.1695, train_acc=0.9385, val_loss=0.1813, val_acc=0.9345
+  Epoch 6/10 | train_loss=0.1501, train_acc=0.9464, val_loss=0.1858, val_acc=0.9318
+  Epoch 7/10 | train_loss=0.1344, train_acc=0.9514, val_loss=0.1889, val_acc=0.9393
+  Epoch 8/10 | train_loss=0.1163, train_acc=0.9581, val_loss=0.1820, val_acc=0.9372
+  Epoch 9/10 | train_loss=0.0984, train_acc=0.9646, val_loss=0.1651, val_acc=0.9445
+  Epoch 10/10 | train_loss=0.0857, train_acc=0.9691, val_loss=0.1922, val_acc=0.9387
+  --> Best val_acc for this cfg = 0.9445 | time=633.0s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=B, lr=0.001, epochs=10, batch_size=32
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/10 | train_loss=0.3491, train_acc=0.8749, val_loss=0.2911, val_acc=0.8952
+  Epoch 2/10 | train_loss=0.2426, train_acc=0.9124, val_loss=0.2311, val_acc=0.9125
+  Epoch 3/10 | train_loss=0.2073, train_acc=0.9248, val_loss=0.2213, val_acc=0.9212
+  Epoch 4/10 | train_loss=0.1835, train_acc=0.9343, val_loss=0.1961, val_acc=0.9288
+  Epoch 5/10 | train_loss=0.1661, train_acc=0.9400, val_loss=0.1817, val_acc=0.9352
+  Epoch 6/10 | train_loss=0.1420, train_acc=0.9484, val_loss=0.1855, val_acc=0.9328
+  Epoch 7/10 | train_loss=0.1258, train_acc=0.9541, val_loss=0.1717, val_acc=0.9408
+  Epoch 8/10 | train_loss=0.1097, train_acc=0.9602, val_loss=0.1756, val_acc=0.9427
+  Epoch 9/10 | train_loss=0.0941, train_acc=0.9659, val_loss=0.1818, val_acc=0.9405
+  Epoch 10/10 | train_loss=0.0812, train_acc=0.9704, val_loss=0.2162, val_acc=0.9353
+  --> Best val_acc for this cfg = 0.9427 | time=567.0s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=B, lr=0.001, epochs=10, batch_size=64
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/10 | train_loss=0.3221, train_acc=0.8849, val_loss=0.2523, val_acc=0.9097
+  Epoch 2/10 | train_loss=0.2265, train_acc=0.9173, val_loss=0.2268, val_acc=0.9170
+  Epoch 3/10 | train_loss=0.1911, train_acc=0.9314, val_loss=0.1918, val_acc=0.9305
+  Epoch 4/10 | train_loss=0.1702, train_acc=0.9381, val_loss=0.1813, val_acc=0.9378
+  Epoch 5/10 | train_loss=0.1538, train_acc=0.9445, val_loss=0.1990, val_acc=0.9335
+  Epoch 6/10 | train_loss=0.1393, train_acc=0.9491, val_loss=0.2199, val_acc=0.9198
+  Epoch 7/10 | train_loss=0.1213, train_acc=0.9564, val_loss=0.1694, val_acc=0.9397
+  Epoch 8/10 | train_loss=0.1103, train_acc=0.9596, val_loss=0.1956, val_acc=0.9350
+  Epoch 9/10 | train_loss=0.0945, train_acc=0.9649, val_loss=0.1893, val_acc=0.9393
+  Epoch 10/10 | train_loss=0.0806, train_acc=0.9709, val_loss=0.2051, val_acc=0.9390
+  --> Best val_acc for this cfg = 0.9397 | time=532.8s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=B, lr=0.001, epochs=15, batch_size=16
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/15 | train_loss=0.3956, train_acc=0.8597, val_loss=0.2767, val_acc=0.8955
+  Epoch 2/15 | train_loss=0.2666, train_acc=0.9047, val_loss=0.2540, val_acc=0.9102
+  Epoch 3/15 | train_loss=0.2245, train_acc=0.9190, val_loss=0.2406, val_acc=0.9132
+  Epoch 4/15 | train_loss=0.1944, train_acc=0.9301, val_loss=0.1981, val_acc=0.9290
+  Epoch 5/15 | train_loss=0.1730, train_acc=0.9370, val_loss=0.1908, val_acc=0.9333
+  Epoch 6/15 | train_loss=0.1533, train_acc=0.9452, val_loss=0.2128, val_acc=0.9238
+  Epoch 7/15 | train_loss=0.1332, train_acc=0.9523, val_loss=0.1965, val_acc=0.9307
+  Epoch 8/15 | train_loss=0.1158, train_acc=0.9587, val_loss=0.1715, val_acc=0.9432
+  Epoch 9/15 | train_loss=0.1014, train_acc=0.9632, val_loss=0.1729, val_acc=0.9415
+  Epoch 10/15 | train_loss=0.0865, train_acc=0.9687, val_loss=0.2002, val_acc=0.9410
+  Epoch 11/15 | train_loss=0.0728, train_acc=0.9739, val_loss=0.1937, val_acc=0.9407
+  Epoch 12/15 | train_loss=0.0661, train_acc=0.9767, val_loss=0.2069, val_acc=0.9437
+  Epoch 13/15 | train_loss=0.0577, train_acc=0.9793, val_loss=0.2165, val_acc=0.9417
+  Epoch 14/15 | train_loss=0.0497, train_acc=0.9822, val_loss=0.2227, val_acc=0.9408
+  Epoch 15/15 | train_loss=0.0468, train_acc=0.9838, val_loss=0.2193, val_acc=0.9397
+  --> Best val_acc for this cfg = 0.9437 | time=947.8s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=B, lr=0.001, epochs=15, batch_size=32
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/15 | train_loss=0.3564, train_acc=0.8730, val_loss=0.2783, val_acc=0.8962
+  Epoch 2/15 | train_loss=0.2469, train_acc=0.9110, val_loss=0.2758, val_acc=0.8995
+  Epoch 3/15 | train_loss=0.2128, train_acc=0.9223, val_loss=0.2031, val_acc=0.9268
+  Epoch 4/15 | train_loss=0.1850, train_acc=0.9332, val_loss=0.2150, val_acc=0.9233
+  Epoch 5/15 | train_loss=0.1658, train_acc=0.9394, val_loss=0.1947, val_acc=0.9318
+  Epoch 6/15 | train_loss=0.1450, train_acc=0.9465, val_loss=0.2073, val_acc=0.9295
+  Epoch 7/15 | train_loss=0.1294, train_acc=0.9522, val_loss=0.1871, val_acc=0.9362
+  Epoch 8/15 | train_loss=0.1108, train_acc=0.9597, val_loss=0.1707, val_acc=0.9443
+  Epoch 9/15 | train_loss=0.0968, train_acc=0.9656, val_loss=0.2178, val_acc=0.9355
+  Epoch 10/15 | train_loss=0.0817, train_acc=0.9694, val_loss=0.2016, val_acc=0.9387
+  Epoch 11/15 | train_loss=0.0723, train_acc=0.9732, val_loss=0.1948, val_acc=0.9365
+  Epoch 12/15 | train_loss=0.0613, train_acc=0.9783, val_loss=0.2149, val_acc=0.9368
+  Epoch 13/15 | train_loss=0.0553, train_acc=0.9798, val_loss=0.2288, val_acc=0.9400
+  Epoch 14/15 | train_loss=0.0494, train_acc=0.9826, val_loss=0.2322, val_acc=0.9430
+  Epoch 15/15 | train_loss=0.0447, train_acc=0.9851, val_loss=0.2241, val_acc=0.9420
+  --> Best val_acc for this cfg = 0.9443 | time=850.1s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=B, lr=0.001, epochs=15, batch_size=64
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/15 | train_loss=0.3238, train_acc=0.8817, val_loss=0.2582, val_acc=0.9085
+  Epoch 2/15 | train_loss=0.2208, train_acc=0.9198, val_loss=0.2309, val_acc=0.9162
+  Epoch 3/15 | train_loss=0.1943, train_acc=0.9298, val_loss=0.2018, val_acc=0.9278
+  Epoch 4/15 | train_loss=0.1716, train_acc=0.9370, val_loss=0.1971, val_acc=0.9278
+  Epoch 5/15 | train_loss=0.1543, train_acc=0.9436, val_loss=0.1723, val_acc=0.9403
+  Epoch 6/15 | train_loss=0.1344, train_acc=0.9504, val_loss=0.1936, val_acc=0.9350
+  Epoch 7/15 | train_loss=0.1203, train_acc=0.9559, val_loss=0.2239, val_acc=0.9310
+  Epoch 8/15 | train_loss=0.1043, train_acc=0.9620, val_loss=0.1813, val_acc=0.9393
+  Epoch 9/15 | train_loss=0.0921, train_acc=0.9667, val_loss=0.1864, val_acc=0.9430
+  Epoch 10/15 | train_loss=0.0771, train_acc=0.9719, val_loss=0.1874, val_acc=0.9448
+  Epoch 11/15 | train_loss=0.0663, train_acc=0.9758, val_loss=0.1828, val_acc=0.9468
+  Epoch 12/15 | train_loss=0.0576, train_acc=0.9789, val_loss=0.2130, val_acc=0.9418
+  Epoch 13/15 | train_loss=0.0515, train_acc=0.9815, val_loss=0.2157, val_acc=0.9445
+  Epoch 14/15 | train_loss=0.0440, train_acc=0.9844, val_loss=0.2341, val_acc=0.9417
+  Epoch 15/15 | train_loss=0.0400, train_acc=0.9856, val_loss=0.2343, val_acc=0.9458
+  --> Best val_acc for this cfg = 0.9468 | time=798.9s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=B, lr=0.0005, epochs=6, batch_size=16
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/6 | train_loss=0.3474, train_acc=0.8771, val_loss=0.2965, val_acc=0.8897
+  Epoch 2/6 | train_loss=0.2416, train_acc=0.9123, val_loss=0.2206, val_acc=0.9230
+  Epoch 3/6 | train_loss=0.2051, train_acc=0.9256, val_loss=0.2085, val_acc=0.9250
+  Epoch 4/6 | train_loss=0.1770, train_acc=0.9357, val_loss=0.1912, val_acc=0.9285
+  Epoch 5/6 | train_loss=0.1560, train_acc=0.9434, val_loss=0.1948, val_acc=0.9325
+  Epoch 6/6 | train_loss=0.1341, train_acc=0.9519, val_loss=0.1796, val_acc=0.9372
+  --> Best val_acc for this cfg = 0.9372 | time=380.2s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=B, lr=0.0005, epochs=6, batch_size=32
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/6 | train_loss=0.3134, train_acc=0.8884, val_loss=0.2395, val_acc=0.9092
+  Epoch 2/6 | train_loss=0.2215, train_acc=0.9193, val_loss=0.2282, val_acc=0.9168
+  Epoch 3/6 | train_loss=0.1887, train_acc=0.9320, val_loss=0.1787, val_acc=0.9370
+  Epoch 4/6 | train_loss=0.1670, train_acc=0.9394, val_loss=0.1895, val_acc=0.9323
+  Epoch 5/6 | train_loss=0.1467, train_acc=0.9468, val_loss=0.1889, val_acc=0.9377
+  Epoch 6/6 | train_loss=0.1282, train_acc=0.9532, val_loss=0.1886, val_acc=0.9368
+  --> Best val_acc for this cfg = 0.9377 | time=340.4s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=B, lr=0.0005, epochs=6, batch_size=64
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/6 | train_loss=0.2940, train_acc=0.8938, val_loss=0.2472, val_acc=0.9115
+  Epoch 2/6 | train_loss=0.2039, train_acc=0.9262, val_loss=0.2018, val_acc=0.9267
+  Epoch 3/6 | train_loss=0.1745, train_acc=0.9369, val_loss=0.1683, val_acc=0.9402
+  Epoch 4/6 | train_loss=0.1513, train_acc=0.9451, val_loss=0.1730, val_acc=0.9408
+  Epoch 5/6 | train_loss=0.1350, train_acc=0.9505, val_loss=0.1735, val_acc=0.9395
+  Epoch 6/6 | train_loss=0.1174, train_acc=0.9573, val_loss=0.1757, val_acc=0.9435
+  --> Best val_acc for this cfg = 0.9435 | time=319.9s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=B, lr=0.0005, epochs=10, batch_size=16
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/10 | train_loss=0.3448, train_acc=0.8760, val_loss=0.2608, val_acc=0.9082
+  Epoch 2/10 | train_loss=0.2429, train_acc=0.9125, val_loss=0.2448, val_acc=0.9118
+  Epoch 3/10 | train_loss=0.2038, train_acc=0.9268, val_loss=0.1966, val_acc=0.9295
+  Epoch 4/10 | train_loss=0.1756, train_acc=0.9370, val_loss=0.1914, val_acc=0.9307
+  Epoch 5/10 | train_loss=0.1511, train_acc=0.9461, val_loss=0.1923, val_acc=0.9315
+  Epoch 6/10 | train_loss=0.1326, train_acc=0.9516, val_loss=0.1964, val_acc=0.9313
+  Epoch 7/10 | train_loss=0.1160, train_acc=0.9570, val_loss=0.1914, val_acc=0.9393
+  Epoch 8/10 | train_loss=0.1004, train_acc=0.9629, val_loss=0.1905, val_acc=0.9443
+  Epoch 9/10 | train_loss=0.0849, train_acc=0.9696, val_loss=0.1812, val_acc=0.9425
+  Epoch 10/10 | train_loss=0.0738, train_acc=0.9736, val_loss=0.1994, val_acc=0.9437
+  --> Best val_acc for this cfg = 0.9443 | time=633.4s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=B, lr=0.0005, epochs=10, batch_size=32
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/10 | train_loss=0.3145, train_acc=0.8863, val_loss=0.2313, val_acc=0.9188
+  Epoch 2/10 | train_loss=0.2215, train_acc=0.9218, val_loss=0.2051, val_acc=0.9250
+  Epoch 3/10 | train_loss=0.1879, train_acc=0.9317, val_loss=0.2043, val_acc=0.9243
+  Epoch 4/10 | train_loss=0.1694, train_acc=0.9373, val_loss=0.1834, val_acc=0.9337
+  Epoch 5/10 | train_loss=0.1457, train_acc=0.9469, val_loss=0.1682, val_acc=0.9430
+  Epoch 6/10 | train_loss=0.1273, train_acc=0.9536, val_loss=0.1851, val_acc=0.9342
+  Epoch 7/10 | train_loss=0.1101, train_acc=0.9598, val_loss=0.1851, val_acc=0.9373
+  Epoch 8/10 | train_loss=0.0910, train_acc=0.9674, val_loss=0.1915, val_acc=0.9400
+  Epoch 9/10 | train_loss=0.0821, train_acc=0.9701, val_loss=0.1825, val_acc=0.9460
+  Epoch 10/10 | train_loss=0.0669, train_acc=0.9761, val_loss=0.2270, val_acc=0.9372
+  --> Best val_acc for this cfg = 0.9460 | time=567.0s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=B, lr=0.0005, epochs=10, batch_size=64
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/10 | train_loss=0.2930, train_acc=0.8948, val_loss=0.2726, val_acc=0.9085
+  Epoch 2/10 | train_loss=0.2041, train_acc=0.9257, val_loss=0.1980, val_acc=0.9303
+  Epoch 3/10 | train_loss=0.1722, train_acc=0.9374, val_loss=0.1944, val_acc=0.9298
+  Epoch 4/10 | train_loss=0.1517, train_acc=0.9445, val_loss=0.2249, val_acc=0.9238
+  Epoch 5/10 | train_loss=0.1341, train_acc=0.9514, val_loss=0.1975, val_acc=0.9332
+  Epoch 6/10 | train_loss=0.1178, train_acc=0.9562, val_loss=0.1867, val_acc=0.9367
+  Epoch 7/10 | train_loss=0.1025, train_acc=0.9629, val_loss=0.1703, val_acc=0.9467
+  Epoch 8/10 | train_loss=0.0872, train_acc=0.9682, val_loss=0.1788, val_acc=0.9430
+  Epoch 9/10 | train_loss=0.0741, train_acc=0.9734, val_loss=0.2029, val_acc=0.9372
+  Epoch 10/10 | train_loss=0.0669, train_acc=0.9754, val_loss=0.1883, val_acc=0.9433
+  --> Best val_acc for this cfg = 0.9467 | time=532.8s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=B, lr=0.0005, epochs=15, batch_size=16
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/15 | train_loss=0.3455, train_acc=0.8770, val_loss=0.2736, val_acc=0.9007
+  Epoch 2/15 | train_loss=0.2405, train_acc=0.9144, val_loss=0.2236, val_acc=0.9168
+  Epoch 3/15 | train_loss=0.2035, train_acc=0.9268, val_loss=0.1937, val_acc=0.9312
+  Epoch 4/15 | train_loss=0.1751, train_acc=0.9357, val_loss=0.1967, val_acc=0.9287
+  Epoch 5/15 | train_loss=0.1515, train_acc=0.9453, val_loss=0.1764, val_acc=0.9402
+  Epoch 6/15 | train_loss=0.1326, train_acc=0.9528, val_loss=0.1716, val_acc=0.9425
+  Epoch 7/15 | train_loss=0.1145, train_acc=0.9586, val_loss=0.1668, val_acc=0.9427
+  Epoch 8/15 | train_loss=0.0972, train_acc=0.9651, val_loss=0.2162, val_acc=0.9320
+  Epoch 9/15 | train_loss=0.0852, train_acc=0.9697, val_loss=0.1786, val_acc=0.9417
+  Epoch 10/15 | train_loss=0.0697, train_acc=0.9746, val_loss=0.2043, val_acc=0.9433
+  Epoch 11/15 | train_loss=0.0623, train_acc=0.9778, val_loss=0.1960, val_acc=0.9438
+  Epoch 12/15 | train_loss=0.0561, train_acc=0.9803, val_loss=0.2145, val_acc=0.9432
+  Epoch 13/15 | train_loss=0.0474, train_acc=0.9836, val_loss=0.2135, val_acc=0.9448
+  Epoch 14/15 | train_loss=0.0426, train_acc=0.9851, val_loss=0.2186, val_acc=0.9450
+  Epoch 15/15 | train_loss=0.0386, train_acc=0.9856, val_loss=0.2146, val_acc=0.9448
+  --> Best val_acc for this cfg = 0.9450 | time=949.9s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=B, lr=0.0005, epochs=15, batch_size=32
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/15 | train_loss=0.3164, train_acc=0.8867, val_loss=0.2721, val_acc=0.8977
+  Epoch 2/15 | train_loss=0.2178, train_acc=0.9212, val_loss=0.2061, val_acc=0.9263
+  Epoch 3/15 | train_loss=0.1894, train_acc=0.9315, val_loss=0.1978, val_acc=0.9298
+  Epoch 4/15 | train_loss=0.1650, train_acc=0.9408, val_loss=0.1783, val_acc=0.9340
+  Epoch 5/15 | train_loss=0.1439, train_acc=0.9484, val_loss=0.2163, val_acc=0.9260
+  Epoch 6/15 | train_loss=0.1269, train_acc=0.9538, val_loss=0.1741, val_acc=0.9428
+  Epoch 7/15 | train_loss=0.1097, train_acc=0.9598, val_loss=0.1723, val_acc=0.9407
+  Epoch 8/15 | train_loss=0.0930, train_acc=0.9663, val_loss=0.1874, val_acc=0.9368
+  Epoch 9/15 | train_loss=0.0807, train_acc=0.9705, val_loss=0.1912, val_acc=0.9432
+  Epoch 10/15 | train_loss=0.0674, train_acc=0.9756, val_loss=0.1875, val_acc=0.9420
+  Epoch 11/15 | train_loss=0.0603, train_acc=0.9781, val_loss=0.1962, val_acc=0.9420
+  Epoch 12/15 | train_loss=0.0515, train_acc=0.9819, val_loss=0.1999, val_acc=0.9443
+  Epoch 13/15 | train_loss=0.0456, train_acc=0.9840, val_loss=0.2133, val_acc=0.9423
+  Epoch 14/15 | train_loss=0.0399, train_acc=0.9856, val_loss=0.1965, val_acc=0.9458
+  Epoch 15/15 | train_loss=0.0381, train_acc=0.9863, val_loss=0.2364, val_acc=0.9443
+  --> Best val_acc for this cfg = 0.9458 | time=850.6s
+
+======================================================================
+[AutoML] backbone=cnn, dataset=B, lr=0.0005, epochs=15, batch_size=64
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] ResNet-18 params: 11.18M
+  Epoch 1/15 | train_loss=0.2895, train_acc=0.8960, val_loss=0.2046, val_acc=0.9225
+  Epoch 2/15 | train_loss=0.2011, train_acc=0.9262, val_loss=0.2162, val_acc=0.9213
+  Epoch 3/15 | train_loss=0.1698, train_acc=0.9388, val_loss=0.2096, val_acc=0.9258
+  Epoch 4/15 | train_loss=0.1517, train_acc=0.9449, val_loss=0.1686, val_acc=0.9397
+  Epoch 5/15 | train_loss=0.1328, train_acc=0.9514, val_loss=0.1765, val_acc=0.9410
+  Epoch 6/15 | train_loss=0.1181, train_acc=0.9574, val_loss=0.1614, val_acc=0.9430
+  Epoch 7/15 | train_loss=0.1019, train_acc=0.9625, val_loss=0.1775, val_acc=0.9438
+  Epoch 8/15 | train_loss=0.0909, train_acc=0.9670, val_loss=0.1768, val_acc=0.9468
+  Epoch 9/15 | train_loss=0.0766, train_acc=0.9725, val_loss=0.1941, val_acc=0.9372
+  Epoch 10/15 | train_loss=0.0684, train_acc=0.9745, val_loss=0.1924, val_acc=0.9438
+  Epoch 11/15 | train_loss=0.0571, train_acc=0.9793, val_loss=0.2128, val_acc=0.9445
+  Epoch 12/15 | train_loss=0.0488, train_acc=0.9826, val_loss=0.2130, val_acc=0.9452
+  Epoch 13/15 | train_loss=0.0438, train_acc=0.9834, val_loss=0.2083, val_acc=0.9443
+  Epoch 14/15 | train_loss=0.0373, train_acc=0.9865, val_loss=0.2205, val_acc=0.9438
+  Epoch 15/15 | train_loss=0.0354, train_acc=0.9877, val_loss=0.2368, val_acc=0.9435
+  --> Best val_acc for this cfg = 0.9468 | time=799.3s
+
+######################################################################
+[AutoML DONE] Best cfg for backbone=cnn, dataset=B: {'lr': 0.001, 'epochs': 15, 'batch_size': 64}, best_val_acc=0.9468
+
+================================================================================
+*** Auto-ML search for backbone=vit, dataset=A ***
+
+======================================================================
+[AutoML] backbone=vit, dataset=A, lr=0.001, epochs=6, batch_size=16
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/6 | train_loss=1.7684, train_acc=0.3378, val_loss=1.5973, val_acc=0.4050
+  Epoch 2/6 | train_loss=1.5216, train_acc=0.4379, val_loss=1.4894, val_acc=0.4652
+  Epoch 3/6 | train_loss=1.3708, train_acc=0.4980, val_loss=1.2627, val_acc=0.5456
+  Epoch 4/6 | train_loss=1.2497, train_acc=0.5512, val_loss=1.1488, val_acc=0.5820
+  Epoch 5/6 | train_loss=1.1475, train_acc=0.5856, val_loss=1.0719, val_acc=0.6138
+  Epoch 6/6 | train_loss=1.0670, train_acc=0.6178, val_loss=1.0948, val_acc=0.6080
+  --> Best val_acc for this cfg = 0.6138 | time=453.5s
+
+======================================================================
+[AutoML] backbone=vit, dataset=A, lr=0.001, epochs=6, batch_size=32
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/6 | train_loss=1.5137, train_acc=0.4416, val_loss=1.1838, val_acc=0.5880
+  Epoch 2/6 | train_loss=1.0984, train_acc=0.6035, val_loss=1.0685, val_acc=0.6302
+  Epoch 3/6 | train_loss=0.9408, train_acc=0.6657, val_loss=0.9624, val_acc=0.6544
+  Epoch 4/6 | train_loss=0.8422, train_acc=0.7028, val_loss=0.8330, val_acc=0.7084
+  Epoch 5/6 | train_loss=0.7673, train_acc=0.7274, val_loss=0.7610, val_acc=0.7340
+  Epoch 6/6 | train_loss=0.7042, train_acc=0.7508, val_loss=0.7632, val_acc=0.7352
+  --> Best val_acc for this cfg = 0.7352 | time=417.1s
+
+======================================================================
+[AutoML] backbone=vit, dataset=A, lr=0.001, epochs=6, batch_size=64
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/6 | train_loss=1.5033, train_acc=0.4438, val_loss=1.3785, val_acc=0.4892
+  Epoch 2/6 | train_loss=1.0382, train_acc=0.6269, val_loss=1.1461, val_acc=0.5960
+  Epoch 3/6 | train_loss=0.8726, train_acc=0.6896, val_loss=0.8437, val_acc=0.6960
+  Epoch 4/6 | train_loss=0.7828, train_acc=0.7222, val_loss=0.8214, val_acc=0.7232
+  Epoch 5/6 | train_loss=0.7060, train_acc=0.7503, val_loss=0.7700, val_acc=0.7340
+  Epoch 6/6 | train_loss=0.6553, train_acc=0.7682, val_loss=0.7569, val_acc=0.7390
+  --> Best val_acc for this cfg = 0.7390 | time=387.4s
+
+======================================================================
+[AutoML] backbone=vit, dataset=A, lr=0.001, epochs=10, batch_size=16
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/10 | train_loss=1.7953, train_acc=0.3252, val_loss=1.6299, val_acc=0.3780
+  Epoch 2/10 | train_loss=1.5680, train_acc=0.4218, val_loss=1.5986, val_acc=0.4180
+  Epoch 3/10 | train_loss=1.4301, train_acc=0.4766, val_loss=1.4282, val_acc=0.4872
+  Epoch 4/10 | train_loss=1.3128, train_acc=0.5218, val_loss=1.2585, val_acc=0.5464
+  Epoch 5/10 | train_loss=1.2301, train_acc=0.5531, val_loss=1.2265, val_acc=0.5498
+  Epoch 6/10 | train_loss=1.1417, train_acc=0.5892, val_loss=1.1382, val_acc=0.5854
+  Epoch 7/10 | train_loss=1.0537, train_acc=0.6245, val_loss=1.0243, val_acc=0.6398
+  Epoch 8/10 | train_loss=0.9922, train_acc=0.6462, val_loss=1.1451, val_acc=0.5978
+  Epoch 9/10 | train_loss=0.9372, train_acc=0.6656, val_loss=1.0555, val_acc=0.6216
+  Epoch 10/10 | train_loss=0.8783, train_acc=0.6889, val_loss=0.8724, val_acc=0.6892
+  --> Best val_acc for this cfg = 0.6892 | time=755.1s
+
+======================================================================
+[AutoML] backbone=vit, dataset=A, lr=0.001, epochs=10, batch_size=32
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/10 | train_loss=1.6702, train_acc=0.3790, val_loss=1.4208, val_acc=0.4826
+  Epoch 2/10 | train_loss=1.3278, train_acc=0.5161, val_loss=1.2725, val_acc=0.5428
+  Epoch 3/10 | train_loss=1.1543, train_acc=0.5816, val_loss=1.1985, val_acc=0.5694
+  Epoch 4/10 | train_loss=1.0316, train_acc=0.6308, val_loss=1.0290, val_acc=0.6408
+  Epoch 5/10 | train_loss=0.9325, train_acc=0.6658, val_loss=0.9821, val_acc=0.6598
+  Epoch 6/10 | train_loss=0.8597, train_acc=0.6955, val_loss=0.8766, val_acc=0.6856
+  Epoch 7/10 | train_loss=0.8032, train_acc=0.7157, val_loss=0.8122, val_acc=0.7112
+  Epoch 8/10 | train_loss=0.7407, train_acc=0.7359, val_loss=0.7784, val_acc=0.7244
+  Epoch 9/10 | train_loss=0.6938, train_acc=0.7552, val_loss=0.7466, val_acc=0.7322
+  Epoch 10/10 | train_loss=0.6507, train_acc=0.7708, val_loss=0.7380, val_acc=0.7350
+  --> Best val_acc for this cfg = 0.7350 | time=694.0s
+
+======================================================================
+[AutoML] backbone=vit, dataset=A, lr=0.001, epochs=10, batch_size=64
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/10 | train_loss=1.4027, train_acc=0.4870, val_loss=0.9964, val_acc=0.6390
+  Epoch 2/10 | train_loss=0.9515, train_acc=0.6604, val_loss=1.0427, val_acc=0.6370
+  Epoch 3/10 | train_loss=0.8048, train_acc=0.7154, val_loss=0.7749, val_acc=0.7248
+  Epoch 4/10 | train_loss=0.6967, train_acc=0.7551, val_loss=0.6850, val_acc=0.7622
+  Epoch 5/10 | train_loss=0.6243, train_acc=0.7794, val_loss=0.6455, val_acc=0.7760
+  Epoch 6/10 | train_loss=0.5617, train_acc=0.8021, val_loss=0.6463, val_acc=0.7774
+  Epoch 7/10 | train_loss=0.5179, train_acc=0.8175, val_loss=0.6189, val_acc=0.7866
+  Epoch 8/10 | train_loss=0.4683, train_acc=0.8361, val_loss=0.5807, val_acc=0.7968
+  Epoch 9/10 | train_loss=0.4261, train_acc=0.8504, val_loss=0.5907, val_acc=0.7998
+  Epoch 10/10 | train_loss=0.3884, train_acc=0.8638, val_loss=0.5365, val_acc=0.8232
+  --> Best val_acc for this cfg = 0.8232 | time=645.9s
+
+======================================================================
+[AutoML] backbone=vit, dataset=A, lr=0.001, epochs=15, batch_size=16
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/15 | train_loss=1.7605, train_acc=0.3401, val_loss=1.5776, val_acc=0.4112
+  Epoch 2/15 | train_loss=1.5135, train_acc=0.4452, val_loss=1.4536, val_acc=0.4708
+  Epoch 3/15 | train_loss=1.3668, train_acc=0.5010, val_loss=1.2941, val_acc=0.5312
+  Epoch 4/15 | train_loss=1.2529, train_acc=0.5454, val_loss=1.2795, val_acc=0.5364
+  Epoch 5/15 | train_loss=1.1631, train_acc=0.5818, val_loss=1.0788, val_acc=0.6174
+  Epoch 6/15 | train_loss=1.0771, train_acc=0.6144, val_loss=1.0248, val_acc=0.6322
+  Epoch 7/15 | train_loss=0.9909, train_acc=0.6477, val_loss=0.9956, val_acc=0.6460
+  Epoch 8/15 | train_loss=0.9241, train_acc=0.6711, val_loss=0.9462, val_acc=0.6660
+  Epoch 9/15 | train_loss=0.8730, train_acc=0.6879, val_loss=0.9099, val_acc=0.6728
+  Epoch 10/15 | train_loss=0.8183, train_acc=0.7075, val_loss=0.8802, val_acc=0.6850
+  Epoch 11/15 | train_loss=0.7707, train_acc=0.7244, val_loss=0.9277, val_acc=0.6798
+  Epoch 12/15 | train_loss=0.7321, train_acc=0.7370, val_loss=0.8112, val_acc=0.7142
+  Epoch 13/15 | train_loss=0.6937, train_acc=0.7530, val_loss=0.7855, val_acc=0.7230
+  Epoch 14/15 | train_loss=0.6568, train_acc=0.7660, val_loss=0.8019, val_acc=0.7178
+  Epoch 15/15 | train_loss=0.6224, train_acc=0.7779, val_loss=0.7441, val_acc=0.7414
+  --> Best val_acc for this cfg = 0.7414 | time=1134.2s
+
+======================================================================
+[AutoML] backbone=vit, dataset=A, lr=0.001, epochs=15, batch_size=32
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/15 | train_loss=1.5919, train_acc=0.4169, val_loss=1.2975, val_acc=0.5350
+  Epoch 2/15 | train_loss=1.1817, train_acc=0.5750, val_loss=1.0780, val_acc=0.6130
+  Epoch 3/15 | train_loss=1.0023, train_acc=0.6430, val_loss=0.9758, val_acc=0.6508
+  Epoch 4/15 | train_loss=0.8897, train_acc=0.6846, val_loss=0.8700, val_acc=0.6874
+  Epoch 5/15 | train_loss=0.8028, train_acc=0.7162, val_loss=0.8050, val_acc=0.7140
+  Epoch 6/15 | train_loss=0.7432, train_acc=0.7369, val_loss=0.7550, val_acc=0.7352
+  Epoch 7/15 | train_loss=0.6866, train_acc=0.7578, val_loss=0.8056, val_acc=0.7278
+  Epoch 8/15 | train_loss=0.6446, train_acc=0.7722, val_loss=0.7790, val_acc=0.7298
+  Epoch 9/15 | train_loss=0.6007, train_acc=0.7879, val_loss=0.6826, val_acc=0.7694
+  Epoch 10/15 | train_loss=0.5655, train_acc=0.7992, val_loss=0.6857, val_acc=0.7652
+  Epoch 11/15 | train_loss=0.5250, train_acc=0.8134, val_loss=0.6960, val_acc=0.7610
+  Epoch 12/15 | train_loss=0.4937, train_acc=0.8254, val_loss=0.7175, val_acc=0.7540
+  Epoch 13/15 | train_loss=0.4570, train_acc=0.8351, val_loss=0.6763, val_acc=0.7732
+  Epoch 14/15 | train_loss=0.4305, train_acc=0.8476, val_loss=0.6516, val_acc=0.7752
+  Epoch 15/15 | train_loss=0.3977, train_acc=0.8571, val_loss=0.6228, val_acc=0.7982
+  --> Best val_acc for this cfg = 0.7982 | time=1040.1s
+
+======================================================================
+[AutoML] backbone=vit, dataset=A, lr=0.001, epochs=15, batch_size=64
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/15 | train_loss=1.4774, train_acc=0.4537, val_loss=1.1397, val_acc=0.5896
+  Epoch 2/15 | train_loss=1.0218, train_acc=0.6364, val_loss=0.9359, val_acc=0.6642
+  Epoch 3/15 | train_loss=0.8612, train_acc=0.6940, val_loss=0.9293, val_acc=0.6584
+  Epoch 4/15 | train_loss=0.7573, train_acc=0.7319, val_loss=0.8140, val_acc=0.7168
+  Epoch 5/15 | train_loss=0.6883, train_acc=0.7554, val_loss=0.7222, val_acc=0.7526
+  Epoch 6/15 | train_loss=0.6216, train_acc=0.7798, val_loss=0.6840, val_acc=0.7634
+  Epoch 7/15 | train_loss=0.5721, train_acc=0.7992, val_loss=0.6666, val_acc=0.7728
+  Epoch 8/15 | train_loss=0.5360, train_acc=0.8094, val_loss=0.6495, val_acc=0.7756
+  Epoch 9/15 | train_loss=0.4865, train_acc=0.8270, val_loss=0.6065, val_acc=0.7896
+  Epoch 10/15 | train_loss=0.4457, train_acc=0.8432, val_loss=0.5933, val_acc=0.8020
+  Epoch 11/15 | train_loss=0.4179, train_acc=0.8516, val_loss=0.5736, val_acc=0.8086
+  Epoch 12/15 | train_loss=0.3766, train_acc=0.8668, val_loss=0.5812, val_acc=0.8040
+  Epoch 13/15 | train_loss=0.3512, train_acc=0.8746, val_loss=0.6190, val_acc=0.7908
+  Epoch 14/15 | train_loss=0.3294, train_acc=0.8820, val_loss=0.5769, val_acc=0.8098
+  Epoch 15/15 | train_loss=0.2964, train_acc=0.8948, val_loss=0.5223, val_acc=0.8274
+  --> Best val_acc for this cfg = 0.8274 | time=968.7s
+
+======================================================================
+[AutoML] backbone=vit, dataset=A, lr=0.0005, epochs=6, batch_size=16
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/6 | train_loss=1.3423, train_acc=0.5117, val_loss=1.0258, val_acc=0.6300
+  Epoch 2/6 | train_loss=0.8935, train_acc=0.6815, val_loss=0.8497, val_acc=0.6930
+  Epoch 3/6 | train_loss=0.7504, train_acc=0.7352, val_loss=0.7330, val_acc=0.7402
+  Epoch 4/6 | train_loss=0.6569, train_acc=0.7677, val_loss=0.6993, val_acc=0.7518
+  Epoch 5/6 | train_loss=0.5815, train_acc=0.7965, val_loss=0.6166, val_acc=0.7870
+  Epoch 6/6 | train_loss=0.5209, train_acc=0.8176, val_loss=0.6180, val_acc=0.7856
+  --> Best val_acc for this cfg = 0.7870 | time=454.1s
+
+======================================================================
+[AutoML] backbone=vit, dataset=A, lr=0.0005, epochs=6, batch_size=32
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/6 | train_loss=0.7275, train_acc=0.7460, val_loss=0.5132, val_acc=0.8290
+  Epoch 2/6 | train_loss=0.4500, train_acc=0.8469, val_loss=0.4158, val_acc=0.8658
+  Epoch 3/6 | train_loss=0.3766, train_acc=0.8690, val_loss=0.3889, val_acc=0.8692
+  Epoch 4/6 | train_loss=0.3229, train_acc=0.8871, val_loss=0.4256, val_acc=0.8550
+  Epoch 5/6 | train_loss=0.2951, train_acc=0.8972, val_loss=0.3700, val_acc=0.8750
+  Epoch 6/6 | train_loss=0.2630, train_acc=0.9090, val_loss=0.3832, val_acc=0.8704
+  --> Best val_acc for this cfg = 0.8750 | time=417.0s
+
+======================================================================
+[AutoML] backbone=vit, dataset=A, lr=0.0005, epochs=6, batch_size=64
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/6 | train_loss=0.7530, train_acc=0.7336, val_loss=0.4706, val_acc=0.8434
+  Epoch 2/6 | train_loss=0.3647, train_acc=0.8750, val_loss=0.3692, val_acc=0.8756
+  Epoch 3/6 | train_loss=0.2910, train_acc=0.9003, val_loss=0.3141, val_acc=0.8964
+  Epoch 4/6 | train_loss=0.2454, train_acc=0.9151, val_loss=0.3620, val_acc=0.8738
+  Epoch 5/6 | train_loss=0.2236, train_acc=0.9237, val_loss=0.3616, val_acc=0.8810
+  Epoch 6/6 | train_loss=0.1931, train_acc=0.9325, val_loss=0.2909, val_acc=0.9008
+  --> Best val_acc for this cfg = 0.9008 | time=387.8s
+
+======================================================================
+[AutoML] backbone=vit, dataset=A, lr=0.0005, epochs=10, batch_size=16
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/10 | train_loss=0.9950, train_acc=0.6436, val_loss=0.6411, val_acc=0.7764
+  Epoch 2/10 | train_loss=0.6323, train_acc=0.7831, val_loss=0.5460, val_acc=0.8094
+  Epoch 3/10 | train_loss=0.5224, train_acc=0.8186, val_loss=0.5194, val_acc=0.8218
+  Epoch 4/10 | train_loss=0.4551, train_acc=0.8411, val_loss=0.4937, val_acc=0.8358
+  Epoch 5/10 | train_loss=0.4004, train_acc=0.8617, val_loss=0.4520, val_acc=0.8378
+  Epoch 6/10 | train_loss=0.3629, train_acc=0.8743, val_loss=0.5236, val_acc=0.8330
+  Epoch 7/10 | train_loss=0.3211, train_acc=0.8889, val_loss=0.4423, val_acc=0.8574
+  Epoch 8/10 | train_loss=0.2928, train_acc=0.8972, val_loss=0.4415, val_acc=0.8492
+  Epoch 9/10 | train_loss=0.2661, train_acc=0.9057, val_loss=0.4438, val_acc=0.8594
+  Epoch 10/10 | train_loss=0.2425, train_acc=0.9156, val_loss=0.3448, val_acc=0.8844
+  --> Best val_acc for this cfg = 0.8844 | time=756.1s
+
+======================================================================
+[AutoML] backbone=vit, dataset=A, lr=0.0005, epochs=10, batch_size=32
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/10 | train_loss=0.9219, train_acc=0.6727, val_loss=0.5625, val_acc=0.8114
+  Epoch 2/10 | train_loss=0.4995, train_acc=0.8282, val_loss=0.4726, val_acc=0.8364
+  Epoch 3/10 | train_loss=0.4089, train_acc=0.8582, val_loss=0.4356, val_acc=0.8494
+  Epoch 4/10 | train_loss=0.3498, train_acc=0.8784, val_loss=0.3746, val_acc=0.8704
+  Epoch 5/10 | train_loss=0.3132, train_acc=0.8910, val_loss=0.3690, val_acc=0.8688
+  Epoch 6/10 | train_loss=0.2828, train_acc=0.9011, val_loss=0.3770, val_acc=0.8744
+  Epoch 7/10 | train_loss=0.2544, train_acc=0.9106, val_loss=0.3921, val_acc=0.8654
+  Epoch 8/10 | train_loss=0.2274, train_acc=0.9218, val_loss=0.3806, val_acc=0.8774
+  Epoch 9/10 | train_loss=0.2105, train_acc=0.9271, val_loss=0.3787, val_acc=0.8812
+  Epoch 10/10 | train_loss=0.1929, train_acc=0.9310, val_loss=0.3518, val_acc=0.8856
+  --> Best val_acc for this cfg = 0.8856 | time=692.8s
+
+======================================================================
+[AutoML] backbone=vit, dataset=A, lr=0.0005, epochs=10, batch_size=64
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/10 | train_loss=0.7216, train_acc=0.7473, val_loss=0.4171, val_acc=0.8582
+  Epoch 2/10 | train_loss=0.3576, train_acc=0.8781, val_loss=0.3422, val_acc=0.8852
+  Epoch 3/10 | train_loss=0.2837, train_acc=0.9021, val_loss=0.3217, val_acc=0.8926
+  Epoch 4/10 | train_loss=0.2406, train_acc=0.9168, val_loss=0.3386, val_acc=0.8870
+  Epoch 5/10 | train_loss=0.2154, train_acc=0.9248, val_loss=0.3550, val_acc=0.8836
+  Epoch 6/10 | train_loss=0.1920, train_acc=0.9346, val_loss=0.3360, val_acc=0.8920
+  Epoch 7/10 | train_loss=0.1720, train_acc=0.9399, val_loss=0.3901, val_acc=0.8814
+  Epoch 8/10 | train_loss=0.1675, train_acc=0.9429, val_loss=0.3363, val_acc=0.8912
+  Epoch 9/10 | train_loss=0.1435, train_acc=0.9494, val_loss=0.3253, val_acc=0.8936
+  Epoch 10/10 | train_loss=0.1382, train_acc=0.9524, val_loss=0.2901, val_acc=0.9012
+  --> Best val_acc for this cfg = 0.9012 | time=646.1s
+
+======================================================================
+[AutoML] backbone=vit, dataset=A, lr=0.0005, epochs=15, batch_size=16
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/15 | train_loss=1.4428, train_acc=0.4705, val_loss=1.0770, val_acc=0.6170
+  Epoch 2/15 | train_loss=0.9794, train_acc=0.6512, val_loss=0.8685, val_acc=0.6910
+  Epoch 3/15 | train_loss=0.8247, train_acc=0.7087, val_loss=0.8506, val_acc=0.7020
+  Epoch 4/15 | train_loss=0.7278, train_acc=0.7423, val_loss=0.7358, val_acc=0.7404
+  Epoch 5/15 | train_loss=0.6559, train_acc=0.7662, val_loss=0.6689, val_acc=0.7706
+  Epoch 6/15 | train_loss=0.5903, train_acc=0.7897, val_loss=0.6744, val_acc=0.7666
+  Epoch 7/15 | train_loss=0.5357, train_acc=0.8116, val_loss=0.6152, val_acc=0.7860
+  Epoch 8/15 | train_loss=0.4886, train_acc=0.8278, val_loss=0.5943, val_acc=0.7912
+  Epoch 9/15 | train_loss=0.4462, train_acc=0.8429, val_loss=0.5564, val_acc=0.8126
+  Epoch 10/15 | train_loss=0.4068, train_acc=0.8551, val_loss=0.6144, val_acc=0.7954
+  Epoch 11/15 | train_loss=0.3768, train_acc=0.8659, val_loss=0.5585, val_acc=0.8104
+  Epoch 12/15 | train_loss=0.3439, train_acc=0.8772, val_loss=0.5533, val_acc=0.8224
+  Epoch 13/15 | train_loss=0.3126, train_acc=0.8875, val_loss=0.5544, val_acc=0.8156
+  Epoch 14/15 | train_loss=0.2911, train_acc=0.8963, val_loss=0.5559, val_acc=0.8184
+  Epoch 15/15 | train_loss=0.2631, train_acc=0.9061, val_loss=0.5670, val_acc=0.8184
+  --> Best val_acc for this cfg = 0.8224 | time=1134.6s
+
+======================================================================
+[AutoML] backbone=vit, dataset=A, lr=0.0005, epochs=15, batch_size=32
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/15 | train_loss=0.6815, train_acc=0.7632, val_loss=0.4965, val_acc=0.8296
+  Epoch 2/15 | train_loss=0.4379, train_acc=0.8513, val_loss=0.4508, val_acc=0.8430
+  Epoch 3/15 | train_loss=0.3670, train_acc=0.8733, val_loss=0.4214, val_acc=0.8576
+  Epoch 4/15 | train_loss=0.3258, train_acc=0.8879, val_loss=0.3920, val_acc=0.8678
+  Epoch 5/15 | train_loss=0.2942, train_acc=0.8980, val_loss=0.3503, val_acc=0.8826
+  Epoch 6/15 | train_loss=0.2642, train_acc=0.9077, val_loss=0.3770, val_acc=0.8746
+  Epoch 7/15 | train_loss=0.2369, train_acc=0.9173, val_loss=0.3301, val_acc=0.8866
+  Epoch 8/15 | train_loss=0.2189, train_acc=0.9237, val_loss=0.4447, val_acc=0.8586
+  Epoch 9/15 | train_loss=0.1966, train_acc=0.9307, val_loss=0.3759, val_acc=0.8834
+  Epoch 10/15 | train_loss=0.1808, train_acc=0.9368, val_loss=0.3436, val_acc=0.8928
+  Epoch 11/15 | train_loss=0.1681, train_acc=0.9417, val_loss=0.3457, val_acc=0.8896
+  Epoch 12/15 | train_loss=0.1533, train_acc=0.9457, val_loss=0.3425, val_acc=0.8926
+  Epoch 13/15 | train_loss=0.1422, train_acc=0.9499, val_loss=0.3065, val_acc=0.9046
+  Epoch 14/15 | train_loss=0.1346, train_acc=0.9525, val_loss=0.3299, val_acc=0.8962
+  Epoch 15/15 | train_loss=0.1220, train_acc=0.9567, val_loss=0.3714, val_acc=0.8834
+  --> Best val_acc for this cfg = 0.9046 | time=1042.5s
+
+======================================================================
+[AutoML] backbone=vit, dataset=A, lr=0.0005, epochs=15, batch_size=64
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/15 | train_loss=0.7856, train_acc=0.7207, val_loss=0.4137, val_acc=0.8618
+  Epoch 2/15 | train_loss=0.3751, train_acc=0.8705, val_loss=0.3933, val_acc=0.8702
+  Epoch 3/15 | train_loss=0.2966, train_acc=0.8969, val_loss=0.3922, val_acc=0.8694
+  Epoch 4/15 | train_loss=0.2463, train_acc=0.9153, val_loss=0.3840, val_acc=0.8716
+  Epoch 5/15 | train_loss=0.2241, train_acc=0.9220, val_loss=0.3225, val_acc=0.8944
+  Epoch 6/15 | train_loss=0.1989, train_acc=0.9311, val_loss=0.2953, val_acc=0.9034
+  Epoch 7/15 | train_loss=0.1772, train_acc=0.9378, val_loss=0.3075, val_acc=0.9032
+  Epoch 8/15 | train_loss=0.1660, train_acc=0.9417, val_loss=0.3235, val_acc=0.8982
+  Epoch 9/15 | train_loss=0.1492, train_acc=0.9480, val_loss=0.2905, val_acc=0.9042
+  Epoch 10/15 | train_loss=0.1406, train_acc=0.9504, val_loss=0.3085, val_acc=0.9054
+  Epoch 11/15 | train_loss=0.1268, train_acc=0.9546, val_loss=0.3315, val_acc=0.8970
+  Epoch 12/15 | train_loss=0.1185, train_acc=0.9580, val_loss=0.3150, val_acc=0.9010
+  Epoch 13/15 | train_loss=0.1111, train_acc=0.9601, val_loss=0.3026, val_acc=0.9100
+  Epoch 14/15 | train_loss=0.1040, train_acc=0.9640, val_loss=0.3234, val_acc=0.9010
+  Epoch 15/15 | train_loss=0.0946, train_acc=0.9669, val_loss=0.2736, val_acc=0.9132
+  --> Best val_acc for this cfg = 0.9132 | time=969.3s
+
+######################################################################
+[AutoML DONE] Best cfg for backbone=vit, dataset=A: {'lr': 0.0005, 'epochs': 15, 'batch_size': 64}, best_val_acc=0.9132
+
+================================================================================
+*** Auto-ML search for backbone=vit, dataset=B ***
+
+======================================================================
+[AutoML] backbone=vit, dataset=B, lr=0.001, epochs=6, batch_size=16
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/6 | train_loss=0.9103, train_acc=0.6544, val_loss=0.6755, val_acc=0.7380
+  Epoch 2/6 | train_loss=0.5969, train_acc=0.7781, val_loss=0.5504, val_acc=0.7940
+  Epoch 3/6 | train_loss=0.5306, train_acc=0.8044, val_loss=0.5631, val_acc=0.7923
+  Epoch 4/6 | train_loss=0.4871, train_acc=0.8201, val_loss=0.5016, val_acc=0.8015
+  Epoch 5/6 | train_loss=0.4672, train_acc=0.8277, val_loss=0.4469, val_acc=0.8302
+  Epoch 6/6 | train_loss=0.5045, train_acc=0.8133, val_loss=0.4680, val_acc=0.8247
+  --> Best val_acc for this cfg = 0.8302 | time=543.7s
+
+======================================================================
+[AutoML] backbone=vit, dataset=B, lr=0.001, epochs=6, batch_size=32
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/6 | train_loss=0.7711, train_acc=0.7065, val_loss=0.5140, val_acc=0.8073
+  Epoch 2/6 | train_loss=0.4953, train_acc=0.8167, val_loss=0.4391, val_acc=0.8298
+  Epoch 3/6 | train_loss=0.4378, train_acc=0.8386, val_loss=0.3845, val_acc=0.8527
+  Epoch 4/6 | train_loss=0.4034, train_acc=0.8500, val_loss=0.3784, val_acc=0.8562
+  Epoch 5/6 | train_loss=0.3700, train_acc=0.8641, val_loss=0.3293, val_acc=0.8823
+  Epoch 6/6 | train_loss=0.3485, train_acc=0.8714, val_loss=0.3061, val_acc=0.8810
+  --> Best val_acc for this cfg = 0.8823 | time=500.5s
+
+======================================================================
+[AutoML] backbone=vit, dataset=B, lr=0.001, epochs=6, batch_size=64
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/6 | train_loss=0.7416, train_acc=0.7221, val_loss=0.5163, val_acc=0.8072
+  Epoch 2/6 | train_loss=0.4516, train_acc=0.8328, val_loss=0.3989, val_acc=0.8502
+  Epoch 3/6 | train_loss=0.3987, train_acc=0.8526, val_loss=0.3612, val_acc=0.8642
+  Epoch 4/6 | train_loss=0.3520, train_acc=0.8700, val_loss=0.3197, val_acc=0.8825
+  Epoch 5/6 | train_loss=0.3395, train_acc=0.8744, val_loss=0.3215, val_acc=0.8803
+  Epoch 6/6 | train_loss=0.3142, train_acc=0.8826, val_loss=0.3112, val_acc=0.8810
+  --> Best val_acc for this cfg = 0.8825 | time=464.0s
+
+======================================================================
+[AutoML] backbone=vit, dataset=B, lr=0.001, epochs=10, batch_size=16
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/10 | train_loss=0.9916, train_acc=0.6204, val_loss=0.6771, val_acc=0.7497
+  Epoch 2/10 | train_loss=0.6545, train_acc=0.7562, val_loss=0.5370, val_acc=0.7893
+  Epoch 3/10 | train_loss=0.5516, train_acc=0.7943, val_loss=0.5039, val_acc=0.8135
+  Epoch 4/10 | train_loss=0.4962, train_acc=0.8147, val_loss=0.4624, val_acc=0.8238
+  Epoch 5/10 | train_loss=0.4610, train_acc=0.8284, val_loss=0.4404, val_acc=0.8383
+  Epoch 6/10 | train_loss=0.4278, train_acc=0.8406, val_loss=0.4147, val_acc=0.8437
+  Epoch 7/10 | train_loss=0.4011, train_acc=0.8509, val_loss=0.4209, val_acc=0.8482
+  Epoch 8/10 | train_loss=0.3926, train_acc=0.8540, val_loss=0.3815, val_acc=0.8578
+  Epoch 9/10 | train_loss=0.3856, train_acc=0.8556, val_loss=0.5172, val_acc=0.8108
+  Epoch 10/10 | train_loss=0.3693, train_acc=0.8622, val_loss=0.3498, val_acc=0.8665
+  --> Best val_acc for this cfg = 0.8665 | time=907.4s
+
+======================================================================
+[AutoML] backbone=vit, dataset=B, lr=0.001, epochs=10, batch_size=32
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/10 | train_loss=0.8689, train_acc=0.6676, val_loss=0.5666, val_acc=0.7868
+  Epoch 2/10 | train_loss=0.5279, train_acc=0.8032, val_loss=0.4862, val_acc=0.8263
+  Epoch 3/10 | train_loss=0.4448, train_acc=0.8354, val_loss=0.4227, val_acc=0.8403
+  Epoch 4/10 | train_loss=0.4038, train_acc=0.8505, val_loss=0.3973, val_acc=0.8468
+  Epoch 5/10 | train_loss=0.3715, train_acc=0.8627, val_loss=0.3579, val_acc=0.8653
+  Epoch 6/10 | train_loss=0.3485, train_acc=0.8705, val_loss=0.3326, val_acc=0.8735
+  Epoch 7/10 | train_loss=0.3309, train_acc=0.8774, val_loss=0.3274, val_acc=0.8760
+  Epoch 8/10 | train_loss=0.3152, train_acc=0.8831, val_loss=0.3558, val_acc=0.8648
+  Epoch 9/10 | train_loss=0.3016, train_acc=0.8879, val_loss=0.3026, val_acc=0.8822
+  Epoch 10/10 | train_loss=0.2950, train_acc=0.8899, val_loss=0.3102, val_acc=0.8793
+  --> Best val_acc for this cfg = 0.8822 | time=834.3s
+
+======================================================================
+[AutoML] backbone=vit, dataset=B, lr=0.001, epochs=10, batch_size=64
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/10 | train_loss=0.7054, train_acc=0.7336, val_loss=0.4685, val_acc=0.8222
+  Epoch 2/10 | train_loss=0.4231, train_acc=0.8422, val_loss=0.3804, val_acc=0.8558
+  Epoch 3/10 | train_loss=0.3731, train_acc=0.8613, val_loss=0.3864, val_acc=0.8530
+  Epoch 4/10 | train_loss=0.3359, train_acc=0.8754, val_loss=0.3127, val_acc=0.8813
+  Epoch 5/10 | train_loss=0.3189, train_acc=0.8811, val_loss=0.3511, val_acc=0.8725
+  Epoch 6/10 | train_loss=0.2935, train_acc=0.8914, val_loss=0.3014, val_acc=0.8878
+  Epoch 7/10 | train_loss=0.2845, train_acc=0.8948, val_loss=0.2610, val_acc=0.9010
+  Epoch 8/10 | train_loss=0.2685, train_acc=0.9003, val_loss=0.3143, val_acc=0.8778
+  Epoch 9/10 | train_loss=0.2585, train_acc=0.9048, val_loss=0.2633, val_acc=0.8980
+  Epoch 10/10 | train_loss=0.2498, train_acc=0.9079, val_loss=0.2596, val_acc=0.9062
+  --> Best val_acc for this cfg = 0.9062 | time=773.6s
+
+======================================================================
+[AutoML] backbone=vit, dataset=B, lr=0.001, epochs=15, batch_size=16
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/15 | train_loss=0.8359, train_acc=0.6816, val_loss=0.6536, val_acc=0.7495
+  Epoch 2/15 | train_loss=0.5642, train_acc=0.7915, val_loss=0.4967, val_acc=0.8133
+  Epoch 3/15 | train_loss=0.4946, train_acc=0.8172, val_loss=0.4598, val_acc=0.8287
+  Epoch 4/15 | train_loss=0.4378, train_acc=0.8390, val_loss=0.3944, val_acc=0.8485
+  Epoch 5/15 | train_loss=0.4012, train_acc=0.8516, val_loss=0.3776, val_acc=0.8587
+  Epoch 6/15 | train_loss=0.3734, train_acc=0.8610, val_loss=0.3727, val_acc=0.8570
+  Epoch 7/15 | train_loss=0.3505, train_acc=0.8691, val_loss=0.3787, val_acc=0.8617
+  Epoch 8/15 | train_loss=0.3351, train_acc=0.8756, val_loss=0.3778, val_acc=0.8612
+  Epoch 9/15 | train_loss=0.3197, train_acc=0.8825, val_loss=0.3492, val_acc=0.8698
+  Epoch 10/15 | train_loss=0.3060, train_acc=0.8871, val_loss=0.3143, val_acc=0.8815
+  Epoch 11/15 | train_loss=0.2952, train_acc=0.8905, val_loss=0.3077, val_acc=0.8852
+  Epoch 12/15 | train_loss=0.2855, train_acc=0.8930, val_loss=0.2861, val_acc=0.8958
+  Epoch 13/15 | train_loss=0.2759, train_acc=0.8975, val_loss=0.3002, val_acc=0.8852
+  Epoch 14/15 | train_loss=0.2683, train_acc=0.9019, val_loss=0.2877, val_acc=0.8945
+  Epoch 15/15 | train_loss=0.2612, train_acc=0.9017, val_loss=0.2707, val_acc=0.8990
+  --> Best val_acc for this cfg = 0.8990 | time=1360.7s
+
+======================================================================
+[AutoML] backbone=vit, dataset=B, lr=0.001, epochs=15, batch_size=32
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/15 | train_loss=0.8823, train_acc=0.6642, val_loss=0.6722, val_acc=0.7385
+  Epoch 2/15 | train_loss=0.5189, train_acc=0.8083, val_loss=0.4813, val_acc=0.8172
+  Epoch 3/15 | train_loss=0.4547, train_acc=0.8322, val_loss=0.4172, val_acc=0.8475
+  Epoch 4/15 | train_loss=0.4140, train_acc=0.8458, val_loss=0.4568, val_acc=0.8310
+  Epoch 5/15 | train_loss=0.3876, train_acc=0.8553, val_loss=0.3988, val_acc=0.8550
+  Epoch 6/15 | train_loss=0.3634, train_acc=0.8643, val_loss=0.3701, val_acc=0.8618
+  Epoch 7/15 | train_loss=0.3437, train_acc=0.8723, val_loss=0.3709, val_acc=0.8625
+  Epoch 8/15 | train_loss=0.3311, train_acc=0.8779, val_loss=0.3111, val_acc=0.8857
+  Epoch 9/15 | train_loss=0.3124, train_acc=0.8827, val_loss=0.3085, val_acc=0.8883
+  Epoch 10/15 | train_loss=0.3027, train_acc=0.8890, val_loss=0.3373, val_acc=0.8737
+  Epoch 11/15 | train_loss=0.2910, train_acc=0.8894, val_loss=0.3138, val_acc=0.8872
+  Epoch 12/15 | train_loss=0.2813, train_acc=0.8949, val_loss=0.3173, val_acc=0.8795
+  Epoch 13/15 | train_loss=0.2725, train_acc=0.8982, val_loss=0.3017, val_acc=0.8888
+  Epoch 14/15 | train_loss=0.2648, train_acc=0.9021, val_loss=0.2845, val_acc=0.8917
+  Epoch 15/15 | train_loss=0.2562, train_acc=0.9048, val_loss=0.2620, val_acc=0.9023
+  --> Best val_acc for this cfg = 0.9023 | time=1244.3s
+
+======================================================================
+[AutoML] backbone=vit, dataset=B, lr=0.001, epochs=15, batch_size=64
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/15 | train_loss=0.6161, train_acc=0.7687, val_loss=0.4492, val_acc=0.8270
+  Epoch 2/15 | train_loss=0.4012, train_acc=0.8522, val_loss=0.3919, val_acc=0.8493
+  Epoch 3/15 | train_loss=0.3500, train_acc=0.8715, val_loss=0.3716, val_acc=0.8605
+  Epoch 4/15 | train_loss=0.3252, train_acc=0.8800, val_loss=0.3907, val_acc=0.8613
+  Epoch 5/15 | train_loss=0.3104, train_acc=0.8847, val_loss=0.2943, val_acc=0.8888
+  Epoch 6/15 | train_loss=0.2827, train_acc=0.8953, val_loss=0.2881, val_acc=0.8908
+  Epoch 7/15 | train_loss=0.2793, train_acc=0.8977, val_loss=0.2829, val_acc=0.8937
+  Epoch 8/15 | train_loss=0.2647, train_acc=0.9026, val_loss=0.2750, val_acc=0.9010
+  Epoch 9/15 | train_loss=0.2551, train_acc=0.9061, val_loss=0.2591, val_acc=0.9020
+  Epoch 10/15 | train_loss=0.2460, train_acc=0.9082, val_loss=0.2894, val_acc=0.8935
+  Epoch 11/15 | train_loss=0.2339, train_acc=0.9128, val_loss=0.2462, val_acc=0.9108
+  Epoch 12/15 | train_loss=0.2254, train_acc=0.9160, val_loss=0.2499, val_acc=0.9080
+  Epoch 13/15 | train_loss=0.2201, train_acc=0.9186, val_loss=0.2940, val_acc=0.8903
+  Epoch 14/15 | train_loss=0.2117, train_acc=0.9214, val_loss=0.2496, val_acc=0.9112
+  Epoch 15/15 | train_loss=0.2051, train_acc=0.9244, val_loss=0.2337, val_acc=0.9145
+  --> Best val_acc for this cfg = 0.9145 | time=1162.1s
+
+======================================================================
+[AutoML] backbone=vit, dataset=B, lr=0.0005, epochs=6, batch_size=16
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/6 | train_loss=0.5076, train_acc=0.8110, val_loss=0.5377, val_acc=0.8067
+  Epoch 2/6 | train_loss=0.3811, train_acc=0.8588, val_loss=0.4518, val_acc=0.8367
+  Epoch 3/6 | train_loss=0.3396, train_acc=0.8734, val_loss=0.3397, val_acc=0.8778
+  Epoch 4/6 | train_loss=0.3111, train_acc=0.8854, val_loss=0.2952, val_acc=0.8913
+  Epoch 5/6 | train_loss=0.2869, train_acc=0.8933, val_loss=0.3117, val_acc=0.8817
+  Epoch 6/6 | train_loss=0.2696, train_acc=0.9000, val_loss=0.2800, val_acc=0.8915
+  --> Best val_acc for this cfg = 0.8915 | time=544.3s
+
+======================================================================
+[AutoML] backbone=vit, dataset=B, lr=0.0005, epochs=6, batch_size=32
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/6 | train_loss=0.4983, train_acc=0.8126, val_loss=0.3671, val_acc=0.8692
+  Epoch 2/6 | train_loss=0.3388, train_acc=0.8752, val_loss=0.3165, val_acc=0.8848
+  Epoch 3/6 | train_loss=0.3078, train_acc=0.8858, val_loss=0.3116, val_acc=0.8805
+  Epoch 4/6 | train_loss=0.2845, train_acc=0.8947, val_loss=0.3015, val_acc=0.8920
+  Epoch 5/6 | train_loss=0.2664, train_acc=0.9011, val_loss=0.2916, val_acc=0.8918
+  Epoch 6/6 | train_loss=0.2533, train_acc=0.9066, val_loss=0.2447, val_acc=0.9130
+  --> Best val_acc for this cfg = 0.9130 | time=499.4s
+
+======================================================================
+[AutoML] backbone=vit, dataset=B, lr=0.0005, epochs=6, batch_size=64
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/6 | train_loss=0.4042, train_acc=0.8529, val_loss=0.2797, val_acc=0.8997
+  Epoch 2/6 | train_loss=0.2769, train_acc=0.8987, val_loss=0.2608, val_acc=0.9033
+  Epoch 3/6 | train_loss=0.2487, train_acc=0.9083, val_loss=0.2428, val_acc=0.9150
+  Epoch 4/6 | train_loss=0.2327, train_acc=0.9149, val_loss=0.2377, val_acc=0.9142
+  Epoch 5/6 | train_loss=0.2222, train_acc=0.9182, val_loss=0.2436, val_acc=0.9088
+  Epoch 6/6 | train_loss=0.2105, train_acc=0.9227, val_loss=0.2208, val_acc=0.9192
+  --> Best val_acc for this cfg = 0.9192 | time=464.6s
+
+======================================================================
+[AutoML] backbone=vit, dataset=B, lr=0.0005, epochs=10, batch_size=16
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/10 | train_loss=0.6464, train_acc=0.7545, val_loss=0.4788, val_acc=0.8168
+  Epoch 2/10 | train_loss=0.4341, train_acc=0.8399, val_loss=0.4134, val_acc=0.8477
+  Epoch 3/10 | train_loss=0.3814, train_acc=0.8575, val_loss=0.3394, val_acc=0.8772
+  Epoch 4/10 | train_loss=0.3446, train_acc=0.8715, val_loss=0.3884, val_acc=0.8527
+  Epoch 5/10 | train_loss=0.3199, train_acc=0.8814, val_loss=0.3777, val_acc=0.8565
+  Epoch 6/10 | train_loss=0.3021, train_acc=0.8884, val_loss=0.2902, val_acc=0.8882
+  Epoch 7/10 | train_loss=0.2865, train_acc=0.8941, val_loss=0.2878, val_acc=0.8955
+  Epoch 8/10 | train_loss=0.2681, train_acc=0.9006, val_loss=0.2780, val_acc=0.8978
+  Epoch 9/10 | train_loss=0.2555, train_acc=0.9051, val_loss=0.2893, val_acc=0.8952
+  Epoch 10/10 | train_loss=0.2463, train_acc=0.9080, val_loss=0.2609, val_acc=0.9060
+  --> Best val_acc for this cfg = 0.9060 | time=907.3s
+
+======================================================================
+[AutoML] backbone=vit, dataset=B, lr=0.0005, epochs=10, batch_size=32
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/10 | train_loss=0.4576, train_acc=0.8306, val_loss=0.3875, val_acc=0.8627
+  Epoch 2/10 | train_loss=0.3268, train_acc=0.8800, val_loss=0.3140, val_acc=0.8895
+  Epoch 3/10 | train_loss=0.2998, train_acc=0.8902, val_loss=0.2879, val_acc=0.8940
+  Epoch 4/10 | train_loss=0.2781, train_acc=0.8968, val_loss=0.2916, val_acc=0.8905
+  Epoch 5/10 | train_loss=0.2615, train_acc=0.9043, val_loss=0.2817, val_acc=0.8995
+  Epoch 6/10 | train_loss=0.2433, train_acc=0.9099, val_loss=0.2359, val_acc=0.9115
+  Epoch 7/10 | train_loss=0.2370, train_acc=0.9128, val_loss=0.2390, val_acc=0.9150
+  Epoch 8/10 | train_loss=0.2258, train_acc=0.9145, val_loss=0.2412, val_acc=0.9113
+  Epoch 9/10 | train_loss=0.2133, train_acc=0.9225, val_loss=0.2476, val_acc=0.9085
+  Epoch 10/10 | train_loss=0.2095, train_acc=0.9224, val_loss=0.2649, val_acc=0.9015
+  --> Best val_acc for this cfg = 0.9150 | time=833.9s
+
+======================================================================
+[AutoML] backbone=vit, dataset=B, lr=0.0005, epochs=10, batch_size=64
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/10 | train_loss=0.3992, train_acc=0.8529, val_loss=0.2868, val_acc=0.8988
+  Epoch 2/10 | train_loss=0.2764, train_acc=0.8983, val_loss=0.2787, val_acc=0.8998
+  Epoch 3/10 | train_loss=0.2533, train_acc=0.9078, val_loss=0.2764, val_acc=0.8940
+  Epoch 4/10 | train_loss=0.2350, train_acc=0.9127, val_loss=0.2322, val_acc=0.9158
+  Epoch 5/10 | train_loss=0.2221, train_acc=0.9185, val_loss=0.2470, val_acc=0.9057
+  Epoch 6/10 | train_loss=0.2155, train_acc=0.9213, val_loss=0.2529, val_acc=0.9085
+  Epoch 7/10 | train_loss=0.2015, train_acc=0.9257, val_loss=0.2440, val_acc=0.9107
+  Epoch 8/10 | train_loss=0.1957, train_acc=0.9280, val_loss=0.2397, val_acc=0.9117
+  Epoch 9/10 | train_loss=0.1867, train_acc=0.9324, val_loss=0.2046, val_acc=0.9245
+  Epoch 10/10 | train_loss=0.1818, train_acc=0.9333, val_loss=0.2081, val_acc=0.9268
+  --> Best val_acc for this cfg = 0.9268 | time=773.8s
+
+======================================================================
+[AutoML] backbone=vit, dataset=B, lr=0.0005, epochs=15, batch_size=16
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/15 | train_loss=0.5346, train_acc=0.8015, val_loss=0.4528, val_acc=0.8357
+  Epoch 2/15 | train_loss=0.3882, train_acc=0.8562, val_loss=0.3744, val_acc=0.8657
+  Epoch 3/15 | train_loss=0.3427, train_acc=0.8729, val_loss=0.3130, val_acc=0.8843
+  Epoch 4/15 | train_loss=0.3153, train_acc=0.8838, val_loss=0.3047, val_acc=0.8893
+  Epoch 5/15 | train_loss=0.2940, train_acc=0.8911, val_loss=0.2716, val_acc=0.8972
+  Epoch 6/15 | train_loss=0.2758, train_acc=0.8981, val_loss=0.2643, val_acc=0.8997
+  Epoch 7/15 | train_loss=0.2597, train_acc=0.9047, val_loss=0.2804, val_acc=0.8962
+  Epoch 8/15 | train_loss=0.2527, train_acc=0.9072, val_loss=0.2461, val_acc=0.9095
+  Epoch 9/15 | train_loss=0.2405, train_acc=0.9094, val_loss=0.2563, val_acc=0.9045
+  Epoch 10/15 | train_loss=0.2282, train_acc=0.9156, val_loss=0.2354, val_acc=0.9145
+  Epoch 11/15 | train_loss=0.2181, train_acc=0.9190, val_loss=0.2322, val_acc=0.9172
+  Epoch 12/15 | train_loss=0.2117, train_acc=0.9212, val_loss=0.2527, val_acc=0.9067
+  Epoch 13/15 | train_loss=0.2045, train_acc=0.9232, val_loss=0.2332, val_acc=0.9152
+  Epoch 14/15 | train_loss=0.1952, train_acc=0.9269, val_loss=0.2487, val_acc=0.9100
+  Epoch 15/15 | train_loss=0.1896, train_acc=0.9295, val_loss=0.2176, val_acc=0.9200
+  --> Best val_acc for this cfg = 0.9200 | time=1363.3s
+
+======================================================================
+[AutoML] backbone=vit, dataset=B, lr=0.0005, epochs=15, batch_size=32
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/15 | train_loss=0.4401, train_acc=0.8367, val_loss=0.3370, val_acc=0.8732
+  Epoch 2/15 | train_loss=0.3163, train_acc=0.8840, val_loss=0.2936, val_acc=0.8907
+  Epoch 3/15 | train_loss=0.2897, train_acc=0.8938, val_loss=0.2690, val_acc=0.8998
+  Epoch 4/15 | train_loss=0.2723, train_acc=0.8994, val_loss=0.2721, val_acc=0.9028
+  Epoch 5/15 | train_loss=0.2555, train_acc=0.9063, val_loss=0.2634, val_acc=0.8998
+  Epoch 6/15 | train_loss=0.2426, train_acc=0.9102, val_loss=0.2694, val_acc=0.8977
+  Epoch 7/15 | train_loss=0.2330, train_acc=0.9144, val_loss=0.2640, val_acc=0.9025
+  Epoch 8/15 | train_loss=0.2256, train_acc=0.9176, val_loss=0.2123, val_acc=0.9235
+  Epoch 9/15 | train_loss=0.2101, train_acc=0.9221, val_loss=0.2287, val_acc=0.9143
+  Epoch 10/15 | train_loss=0.2052, train_acc=0.9246, val_loss=0.2259, val_acc=0.9170
+  Epoch 11/15 | train_loss=0.1959, train_acc=0.9284, val_loss=0.2568, val_acc=0.9063
+  Epoch 12/15 | train_loss=0.1854, train_acc=0.9310, val_loss=0.2220, val_acc=0.9233
+  Epoch 13/15 | train_loss=0.1822, train_acc=0.9324, val_loss=0.2062, val_acc=0.9257
+  Epoch 14/15 | train_loss=0.1743, train_acc=0.9358, val_loss=0.2247, val_acc=0.9142
+  Epoch 15/15 | train_loss=0.1693, train_acc=0.9371, val_loss=0.2008, val_acc=0.9262
+  --> Best val_acc for this cfg = 0.9262 | time=1248.9s
+
+======================================================================
+[AutoML] backbone=vit, dataset=B, lr=0.0005, epochs=15, batch_size=64
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+  Epoch 1/15 | train_loss=0.4159, train_acc=0.8466, val_loss=0.2846, val_acc=0.8930
+  Epoch 2/15 | train_loss=0.2830, train_acc=0.8959, val_loss=0.2601, val_acc=0.9067
+  Epoch 3/15 | train_loss=0.2546, train_acc=0.9057, val_loss=0.2632, val_acc=0.9002
+  Epoch 4/15 | train_loss=0.2383, train_acc=0.9130, val_loss=0.2190, val_acc=0.9155
+  Epoch 5/15 | train_loss=0.2237, train_acc=0.9171, val_loss=0.2465, val_acc=0.9120
+  Epoch 6/15 | train_loss=0.2153, train_acc=0.9209, val_loss=0.2923, val_acc=0.8937
+  Epoch 7/15 | train_loss=0.2035, train_acc=0.9249, val_loss=0.2435, val_acc=0.9125
+  Epoch 8/15 | train_loss=0.1963, train_acc=0.9267, val_loss=0.2124, val_acc=0.9243
+  Epoch 9/15 | train_loss=0.1852, train_acc=0.9318, val_loss=0.2229, val_acc=0.9175
+  Epoch 10/15 | train_loss=0.1817, train_acc=0.9322, val_loss=0.1917, val_acc=0.9313
+  Epoch 11/15 | train_loss=0.1732, train_acc=0.9359, val_loss=0.1944, val_acc=0.9288
+  Epoch 12/15 | train_loss=0.1625, train_acc=0.9393, val_loss=0.2490, val_acc=0.9125
+  Epoch 13/15 | train_loss=0.1573, train_acc=0.9415, val_loss=0.1869, val_acc=0.9352
+  Epoch 14/15 | train_loss=0.1533, train_acc=0.9433, val_loss=0.2099, val_acc=0.9268
+  Epoch 15/15 | train_loss=0.1449, train_acc=0.9462, val_loss=0.1827, val_acc=0.9382
+  --> Best val_acc for this cfg = 0.9382 | time=1162.4s
+
+######################################################################
+[AutoML DONE] Best cfg for backbone=vit, dataset=B: {'lr': 0.0005, 'epochs': 15, 'batch_size': 64}, best_val_acc=0.9382
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] ResNet-18 params: 11.18M
+
+----------------------------------------------------------------------
+[Train] backbone=cnn, dataset=A, regime=linear, cfg={'lr': 0.0005, 'epochs': 15, 'batch_size': 32}
+  Epoch 1/15 | train_loss=0.9449, train_acc=0.7014, val_loss=0.6478, val_acc=0.7820
+  Epoch 2/15 | train_loss=0.6826, train_acc=0.7664, val_loss=0.5949, val_acc=0.7992
+  Epoch 3/15 | train_loss=0.6503, train_acc=0.7757, val_loss=0.5921, val_acc=0.7966
+  Epoch 4/15 | train_loss=0.6350, train_acc=0.7825, val_loss=0.5658, val_acc=0.8032
+  Epoch 5/15 | train_loss=0.6197, train_acc=0.7872, val_loss=0.5762, val_acc=0.7986
+  Epoch 6/15 | train_loss=0.6165, train_acc=0.7886, val_loss=0.5498, val_acc=0.8108
+  Epoch 7/15 | train_loss=0.6106, train_acc=0.7896, val_loss=0.5693, val_acc=0.8022
+  Epoch 8/15 | train_loss=0.6100, train_acc=0.7895, val_loss=0.5531, val_acc=0.8086
+  Epoch 9/15 | train_loss=0.6042, train_acc=0.7915, val_loss=0.5448, val_acc=0.8090
+  Epoch 10/15 | train_loss=0.6015, train_acc=0.7921, val_loss=0.5625, val_acc=0.8052
+  Epoch 11/15 | train_loss=0.5968, train_acc=0.7929, val_loss=0.5480, val_acc=0.8122
+  Epoch 12/15 | train_loss=0.5944, train_acc=0.7943, val_loss=0.5528, val_acc=0.8090
+  Epoch 13/15 | train_loss=0.5957, train_acc=0.7948, val_loss=0.5496, val_acc=0.8100
+  Epoch 14/15 | train_loss=0.5906, train_acc=0.7970, val_loss=0.5443, val_acc=0.8120
+  Epoch 15/15 | train_loss=0.5923, train_acc=0.7944, val_loss=0.5434, val_acc=0.8148
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] ResNet-18 params: 11.18M
+
+----------------------------------------------------------------------
+[Train] backbone=cnn, dataset=A, regime=partial, cfg={'lr': 0.0005, 'epochs': 15, 'batch_size': 32}
+  Epoch 1/15 | train_loss=0.4670, train_acc=0.8402, val_loss=0.3501, val_acc=0.8810
+  Epoch 2/15 | train_loss=0.2910, train_acc=0.8986, val_loss=0.2852, val_acc=0.9024
+  Epoch 3/15 | train_loss=0.2183, train_acc=0.9258, val_loss=0.2871, val_acc=0.9084
+  Epoch 4/15 | train_loss=0.1705, train_acc=0.9420, val_loss=0.2708, val_acc=0.9138
+  Epoch 5/15 | train_loss=0.1385, train_acc=0.9533, val_loss=0.2473, val_acc=0.9220
+  Epoch 6/15 | train_loss=0.1154, train_acc=0.9598, val_loss=0.2699, val_acc=0.9192
+  Epoch 7/15 | train_loss=0.0920, train_acc=0.9693, val_loss=0.2809, val_acc=0.9222
+  Epoch 8/15 | train_loss=0.0820, train_acc=0.9712, val_loss=0.2890, val_acc=0.9202
+  Epoch 9/15 | train_loss=0.0731, train_acc=0.9756, val_loss=0.2894, val_acc=0.9176
+  Epoch 10/15 | train_loss=0.0638, train_acc=0.9775, val_loss=0.2808, val_acc=0.9224
+  Epoch 11/15 | train_loss=0.0573, train_acc=0.9813, val_loss=0.2921, val_acc=0.9202
+  Epoch 12/15 | train_loss=0.0518, train_acc=0.9830, val_loss=0.2819, val_acc=0.9210
+  Epoch 13/15 | train_loss=0.0465, train_acc=0.9841, val_loss=0.3032, val_acc=0.9226
+  Epoch 14/15 | train_loss=0.0498, train_acc=0.9830, val_loss=0.3103, val_acc=0.9204
+  Epoch 15/15 | train_loss=0.0388, train_acc=0.9867, val_loss=0.3156, val_acc=0.9222
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] ResNet-18 params: 11.18M
+
+----------------------------------------------------------------------
+[Train] backbone=cnn, dataset=A, regime=full, cfg={'lr': 0.0005, 'epochs': 15, 'batch_size': 32}
+  Epoch 1/15 | train_loss=0.5245, train_acc=0.8241, val_loss=0.4117, val_acc=0.8568
+  Epoch 2/15 | train_loss=0.3279, train_acc=0.8887, val_loss=0.3449, val_acc=0.8854
+  Epoch 3/15 | train_loss=0.2574, train_acc=0.9135, val_loss=0.3309, val_acc=0.8904
+  Epoch 4/15 | train_loss=0.2136, train_acc=0.9278, val_loss=0.2797, val_acc=0.9074
+  Epoch 5/15 | train_loss=0.1739, train_acc=0.9402, val_loss=0.2498, val_acc=0.9200
+  Epoch 6/15 | train_loss=0.1487, train_acc=0.9490, val_loss=0.2846, val_acc=0.9124
+  Epoch 7/15 | train_loss=0.1286, train_acc=0.9554, val_loss=0.2437, val_acc=0.9178
+  Epoch 8/15 | train_loss=0.1080, train_acc=0.9633, val_loss=0.2581, val_acc=0.9198
+  Epoch 9/15 | train_loss=0.0928, train_acc=0.9681, val_loss=0.2686, val_acc=0.9240
+  Epoch 10/15 | train_loss=0.0879, train_acc=0.9707, val_loss=0.2953, val_acc=0.9160
+  Epoch 11/15 | train_loss=0.0764, train_acc=0.9740, val_loss=0.2758, val_acc=0.9222
+  Epoch 12/15 | train_loss=0.0692, train_acc=0.9760, val_loss=0.2714, val_acc=0.9262
+  Epoch 13/15 | train_loss=0.0626, train_acc=0.9786, val_loss=0.2704, val_acc=0.9290
+  Epoch 14/15 | train_loss=0.0548, train_acc=0.9817, val_loss=0.3029, val_acc=0.9224
+  Epoch 15/15 | train_loss=0.0553, train_acc=0.9816, val_loss=0.2874, val_acc=0.9272
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] ResNet-18 params: 11.18M
+
+----------------------------------------------------------------------
+[Train] backbone=cnn, dataset=B, regime=linear, cfg={'lr': 0.001, 'epochs': 15, 'batch_size': 64}
+  Epoch 1/15 | train_loss=0.6560, train_acc=0.7835, val_loss=0.4817, val_acc=0.8277
+  Epoch 2/15 | train_loss=0.4678, train_acc=0.8355, val_loss=0.4403, val_acc=0.8423
+  Epoch 3/15 | train_loss=0.4416, train_acc=0.8429, val_loss=0.4238, val_acc=0.8437
+  Epoch 4/15 | train_loss=0.4282, train_acc=0.8464, val_loss=0.4247, val_acc=0.8433
+  Epoch 5/15 | train_loss=0.4170, train_acc=0.8505, val_loss=0.4125, val_acc=0.8497
+  Epoch 6/15 | train_loss=0.4123, train_acc=0.8531, val_loss=0.4280, val_acc=0.8425
+  Epoch 7/15 | train_loss=0.4044, train_acc=0.8546, val_loss=0.4091, val_acc=0.8490
+  Epoch 8/15 | train_loss=0.4028, train_acc=0.8537, val_loss=0.4061, val_acc=0.8517
+  Epoch 9/15 | train_loss=0.3934, train_acc=0.8598, val_loss=0.3958, val_acc=0.8523
+  Epoch 10/15 | train_loss=0.4007, train_acc=0.8555, val_loss=0.4199, val_acc=0.8482
+  Epoch 11/15 | train_loss=0.3914, train_acc=0.8601, val_loss=0.4015, val_acc=0.8533
+  Epoch 12/15 | train_loss=0.3925, train_acc=0.8591, val_loss=0.4114, val_acc=0.8488
+  Epoch 13/15 | train_loss=0.3907, train_acc=0.8582, val_loss=0.4019, val_acc=0.8557
+  Epoch 14/15 | train_loss=0.3920, train_acc=0.8581, val_loss=0.3908, val_acc=0.8545
+  Epoch 15/15 | train_loss=0.3874, train_acc=0.8604, val_loss=0.3893, val_acc=0.8608
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] ResNet-18 params: 11.18M
+
+----------------------------------------------------------------------
+[Train] backbone=cnn, dataset=B, regime=partial, cfg={'lr': 0.001, 'epochs': 15, 'batch_size': 64}
+  Epoch 1/15 | train_loss=0.3034, train_acc=0.8917, val_loss=0.2307, val_acc=0.9177
+  Epoch 2/15 | train_loss=0.2120, train_acc=0.9236, val_loss=0.2010, val_acc=0.9267
+  Epoch 3/15 | train_loss=0.1778, train_acc=0.9350, val_loss=0.1937, val_acc=0.9312
+  Epoch 4/15 | train_loss=0.1570, train_acc=0.9434, val_loss=0.1837, val_acc=0.9345
+  Epoch 5/15 | train_loss=0.1342, train_acc=0.9503, val_loss=0.2020, val_acc=0.9305
+  Epoch 6/15 | train_loss=0.1203, train_acc=0.9548, val_loss=0.2101, val_acc=0.9295
+  Epoch 7/15 | train_loss=0.1067, train_acc=0.9602, val_loss=0.1977, val_acc=0.9370
+  Epoch 8/15 | train_loss=0.0924, train_acc=0.9651, val_loss=0.1950, val_acc=0.9382
+  Epoch 9/15 | train_loss=0.0817, train_acc=0.9695, val_loss=0.2118, val_acc=0.9370
+  Epoch 10/15 | train_loss=0.0696, train_acc=0.9747, val_loss=0.2203, val_acc=0.9383
+  Epoch 11/15 | train_loss=0.0620, train_acc=0.9772, val_loss=0.2286, val_acc=0.9372
+  Epoch 12/15 | train_loss=0.0550, train_acc=0.9799, val_loss=0.2242, val_acc=0.9387
+  Epoch 13/15 | train_loss=0.0490, train_acc=0.9816, val_loss=0.2369, val_acc=0.9363
+  Epoch 14/15 | train_loss=0.0452, train_acc=0.9835, val_loss=0.2714, val_acc=0.9393
+  Epoch 15/15 | train_loss=0.0433, train_acc=0.9840, val_loss=0.2524, val_acc=0.9403
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] ResNet-18 params: 11.18M
+
+----------------------------------------------------------------------
+[Train] backbone=cnn, dataset=B, regime=full, cfg={'lr': 0.001, 'epochs': 15, 'batch_size': 64}
+  Epoch 1/15 | train_loss=0.3188, train_acc=0.8853, val_loss=0.2483, val_acc=0.9132
+  Epoch 2/15 | train_loss=0.2261, train_acc=0.9176, val_loss=0.2254, val_acc=0.9165
+  Epoch 3/15 | train_loss=0.1938, train_acc=0.9290, val_loss=0.2053, val_acc=0.9247
+  Epoch 4/15 | train_loss=0.1716, train_acc=0.9384, val_loss=0.1949, val_acc=0.9298
+  Epoch 5/15 | train_loss=0.1507, train_acc=0.9452, val_loss=0.1814, val_acc=0.9352
+  Epoch 6/15 | train_loss=0.1350, train_acc=0.9508, val_loss=0.1707, val_acc=0.9413
+  Epoch 7/15 | train_loss=0.1231, train_acc=0.9549, val_loss=0.1838, val_acc=0.9398
+  Epoch 8/15 | train_loss=0.1073, train_acc=0.9607, val_loss=0.1873, val_acc=0.9377
+  Epoch 9/15 | train_loss=0.0907, train_acc=0.9674, val_loss=0.1988, val_acc=0.9398
+  Epoch 10/15 | train_loss=0.0794, train_acc=0.9711, val_loss=0.2014, val_acc=0.9387
+  Epoch 11/15 | train_loss=0.0677, train_acc=0.9754, val_loss=0.2215, val_acc=0.9392
+  Epoch 12/15 | train_loss=0.0578, train_acc=0.9789, val_loss=0.2301, val_acc=0.9408
+  Epoch 13/15 | train_loss=0.0503, train_acc=0.9820, val_loss=0.2165, val_acc=0.9442
+  Epoch 14/15 | train_loss=0.0461, train_acc=0.9838, val_loss=0.2192, val_acc=0.9445
+  Epoch 15/15 | train_loss=0.0424, train_acc=0.9844, val_loss=0.2234, val_acc=0.9408
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+
+----------------------------------------------------------------------
+[Train] backbone=vit, dataset=A, regime=linear, cfg={'lr': 0.0005, 'epochs': 15, 'batch_size': 64}
+  Epoch 1/15 | train_loss=0.6055, train_acc=0.8221, val_loss=0.4074, val_acc=0.8626
+  Epoch 2/15 | train_loss=0.3769, train_acc=0.8730, val_loss=0.3713, val_acc=0.8712
+  Epoch 3/15 | train_loss=0.3528, train_acc=0.8797, val_loss=0.3593, val_acc=0.8756
+  Epoch 4/15 | train_loss=0.3409, train_acc=0.8832, val_loss=0.3525, val_acc=0.8770
+  Epoch 5/15 | train_loss=0.3325, train_acc=0.8862, val_loss=0.3489, val_acc=0.8768
+  Epoch 6/15 | train_loss=0.3291, train_acc=0.8876, val_loss=0.3490, val_acc=0.8796
+  Epoch 7/15 | train_loss=0.3251, train_acc=0.8877, val_loss=0.3558, val_acc=0.8760
+  Epoch 8/15 | train_loss=0.3234, train_acc=0.8890, val_loss=0.3457, val_acc=0.8840
+  Epoch 9/15 | train_loss=0.3204, train_acc=0.8904, val_loss=0.3465, val_acc=0.8792
+  Epoch 10/15 | train_loss=0.3194, train_acc=0.8895, val_loss=0.3465, val_acc=0.8826
+  Epoch 11/15 | train_loss=0.3168, train_acc=0.8918, val_loss=0.3461, val_acc=0.8816
+  Epoch 12/15 | train_loss=0.3186, train_acc=0.8902, val_loss=0.3459, val_acc=0.8804
+  Epoch 13/15 | train_loss=0.3145, train_acc=0.8915, val_loss=0.3452, val_acc=0.8812
+  Epoch 14/15 | train_loss=0.3176, train_acc=0.8912, val_loss=0.3471, val_acc=0.8796
+  Epoch 15/15 | train_loss=0.3153, train_acc=0.8921, val_loss=0.3444, val_acc=0.8808
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+
+----------------------------------------------------------------------
+[Train] backbone=vit, dataset=A, regime=partial, cfg={'lr': 0.0005, 'epochs': 15, 'batch_size': 64}
+  Epoch 1/15 | train_loss=0.3755, train_acc=0.8736, val_loss=0.2911, val_acc=0.8970
+  Epoch 2/15 | train_loss=0.2424, train_acc=0.9169, val_loss=0.2889, val_acc=0.9026
+  Epoch 3/15 | train_loss=0.1926, train_acc=0.9326, val_loss=0.2926, val_acc=0.9014
+  Epoch 4/15 | train_loss=0.1506, train_acc=0.9479, val_loss=0.3016, val_acc=0.9044
+  Epoch 5/15 | train_loss=0.1197, train_acc=0.9575, val_loss=0.3125, val_acc=0.9090
+  Epoch 6/15 | train_loss=0.0929, train_acc=0.9679, val_loss=0.3357, val_acc=0.9044
+  Epoch 7/15 | train_loss=0.0770, train_acc=0.9732, val_loss=0.3671, val_acc=0.9026
+  Epoch 8/15 | train_loss=0.0640, train_acc=0.9777, val_loss=0.3748, val_acc=0.9044
+  Epoch 9/15 | train_loss=0.0591, train_acc=0.9791, val_loss=0.3932, val_acc=0.9048
+  Epoch 10/15 | train_loss=0.0536, train_acc=0.9807, val_loss=0.4145, val_acc=0.9020
+  Epoch 11/15 | train_loss=0.0480, train_acc=0.9830, val_loss=0.4444, val_acc=0.8994
+  Epoch 12/15 | train_loss=0.0439, train_acc=0.9841, val_loss=0.4391, val_acc=0.9034
+  Epoch 13/15 | train_loss=0.0446, train_acc=0.9847, val_loss=0.4423, val_acc=0.9002
+  Epoch 14/15 | train_loss=0.0388, train_acc=0.9868, val_loss=0.4688, val_acc=0.9032
+  Epoch 15/15 | train_loss=0.0346, train_acc=0.9882, val_loss=0.4498, val_acc=0.8992
+[Data] Dataset A: train=45000, val=5000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+
+----------------------------------------------------------------------
+[Train] backbone=vit, dataset=A, regime=full, cfg={'lr': 0.0005, 'epochs': 15, 'batch_size': 64}
+  Epoch 1/15 | train_loss=0.5512, train_acc=0.8119, val_loss=0.4534, val_acc=0.8478
+  Epoch 2/15 | train_loss=0.3277, train_acc=0.8876, val_loss=0.3703, val_acc=0.8762
+  Epoch 3/15 | train_loss=0.2710, train_acc=0.9071, val_loss=0.3369, val_acc=0.8880
+  Epoch 4/15 | train_loss=0.2381, train_acc=0.9176, val_loss=0.3823, val_acc=0.8754
+  Epoch 5/15 | train_loss=0.2048, train_acc=0.9289, val_loss=0.3164, val_acc=0.8906
+  Epoch 6/15 | train_loss=0.1879, train_acc=0.9344, val_loss=0.3165, val_acc=0.8920
+  Epoch 7/15 | train_loss=0.1720, train_acc=0.9415, val_loss=0.3787, val_acc=0.8784
+  Epoch 8/15 | train_loss=0.1617, train_acc=0.9435, val_loss=0.3471, val_acc=0.8866
+  Epoch 9/15 | train_loss=0.1431, train_acc=0.9509, val_loss=0.3381, val_acc=0.8938
+  Epoch 10/15 | train_loss=0.1362, train_acc=0.9527, val_loss=0.2739, val_acc=0.9128
+  Epoch 11/15 | train_loss=0.1233, train_acc=0.9570, val_loss=0.3307, val_acc=0.8992
+  Epoch 12/15 | train_loss=0.1190, train_acc=0.9574, val_loss=0.3083, val_acc=0.9012
+  Epoch 13/15 | train_loss=0.1103, train_acc=0.9609, val_loss=0.2914, val_acc=0.9132
+  Epoch 14/15 | train_loss=0.1020, train_acc=0.9646, val_loss=0.3172, val_acc=0.9078
+  Epoch 15/15 | train_loss=0.0978, train_acc=0.9662, val_loss=0.3275, val_acc=0.9002
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+
+----------------------------------------------------------------------
+[Train] backbone=vit, dataset=B, regime=linear, cfg={'lr': 0.0005, 'epochs': 15, 'batch_size': 64}
+  Epoch 1/15 | train_loss=0.5935, train_acc=0.8104, val_loss=0.4470, val_acc=0.8377
+  Epoch 2/15 | train_loss=0.4097, train_acc=0.8535, val_loss=0.4022, val_acc=0.8543
+  Epoch 3/15 | train_loss=0.3830, train_acc=0.8623, val_loss=0.3836, val_acc=0.8597
+  Epoch 4/15 | train_loss=0.3687, train_acc=0.8673, val_loss=0.3735, val_acc=0.8655
+  Epoch 5/15 | train_loss=0.3604, train_acc=0.8707, val_loss=0.3714, val_acc=0.8662
+  Epoch 6/15 | train_loss=0.3544, train_acc=0.8728, val_loss=0.3655, val_acc=0.8690
+  Epoch 7/15 | train_loss=0.3505, train_acc=0.8743, val_loss=0.3689, val_acc=0.8630
+  Epoch 8/15 | train_loss=0.3451, train_acc=0.8776, val_loss=0.3585, val_acc=0.8672
+  Epoch 9/15 | train_loss=0.3431, train_acc=0.8773, val_loss=0.3536, val_acc=0.8707
+  Epoch 10/15 | train_loss=0.3420, train_acc=0.8768, val_loss=0.3508, val_acc=0.8748
+  Epoch 11/15 | train_loss=0.3385, train_acc=0.8789, val_loss=0.3523, val_acc=0.8725
+  Epoch 12/15 | train_loss=0.3357, train_acc=0.8790, val_loss=0.3504, val_acc=0.8753
+  Epoch 13/15 | train_loss=0.3365, train_acc=0.8787, val_loss=0.3525, val_acc=0.8733
+  Epoch 14/15 | train_loss=0.3329, train_acc=0.8803, val_loss=0.3452, val_acc=0.8763
+  Epoch 15/15 | train_loss=0.3321, train_acc=0.8807, val_loss=0.3440, val_acc=0.8778
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+
+----------------------------------------------------------------------
+[Train] backbone=vit, dataset=B, regime=partial, cfg={'lr': 0.0005, 'epochs': 15, 'batch_size': 64}
+  Epoch 1/15 | train_loss=0.3855, train_acc=0.8610, val_loss=0.3098, val_acc=0.8860
+  Epoch 2/15 | train_loss=0.2738, train_acc=0.9009, val_loss=0.2639, val_acc=0.9015
+  Epoch 3/15 | train_loss=0.2392, train_acc=0.9114, val_loss=0.2640, val_acc=0.9013
+  Epoch 4/15 | train_loss=0.2153, train_acc=0.9192, val_loss=0.2481, val_acc=0.9080
+  Epoch 5/15 | train_loss=0.1966, train_acc=0.9268, val_loss=0.2589, val_acc=0.9090
+  Epoch 6/15 | train_loss=0.1787, train_acc=0.9335, val_loss=0.2445, val_acc=0.9110
+  Epoch 7/15 | train_loss=0.1626, train_acc=0.9390, val_loss=0.2669, val_acc=0.9068
+  Epoch 8/15 | train_loss=0.1483, train_acc=0.9445, val_loss=0.2693, val_acc=0.9080
+  Epoch 9/15 | train_loss=0.1352, train_acc=0.9496, val_loss=0.2943, val_acc=0.9023
+  Epoch 10/15 | train_loss=0.1231, train_acc=0.9538, val_loss=0.2902, val_acc=0.9108
+  Epoch 11/15 | train_loss=0.1162, train_acc=0.9571, val_loss=0.2687, val_acc=0.9103
+  Epoch 12/15 | train_loss=0.1055, train_acc=0.9602, val_loss=0.2864, val_acc=0.9085
+  Epoch 13/15 | train_loss=0.1026, train_acc=0.9616, val_loss=0.3048, val_acc=0.9018
+  Epoch 14/15 | train_loss=0.0937, train_acc=0.9646, val_loss=0.3057, val_acc=0.9128
+  Epoch 15/15 | train_loss=0.0868, train_acc=0.9674, val_loss=0.3269, val_acc=0.9087
+[Data] Dataset B: train=54000, val=6000, test=10000
+[Model] DeiT-Tiny: patch=(16, 16), embed_dim=192, layers=12, heads=3, params=5.53M
+
+----------------------------------------------------------------------
+[Train] backbone=vit, dataset=B, regime=full, cfg={'lr': 0.0005, 'epochs': 15, 'batch_size': 64}
+  Epoch 1/15 | train_loss=0.4136, train_acc=0.8499, val_loss=0.3065, val_acc=0.8832
+  Epoch 2/15 | train_loss=0.2881, train_acc=0.8933, val_loss=0.2566, val_acc=0.9050
+  Epoch 3/15 | train_loss=0.2523, train_acc=0.9073, val_loss=0.2343, val_acc=0.9152
+  Epoch 4/15 | train_loss=0.2342, train_acc=0.9148, val_loss=0.2667, val_acc=0.9065
+  Epoch 5/15 | train_loss=0.2222, train_acc=0.9179, val_loss=0.2297, val_acc=0.9147
+  Epoch 6/15 | train_loss=0.2112, train_acc=0.9223, val_loss=0.2342, val_acc=0.9130
+  Epoch 7/15 | train_loss=0.2010, train_acc=0.9262, val_loss=0.2166, val_acc=0.9237
+  Epoch 8/15 | train_loss=0.1934, train_acc=0.9284, val_loss=0.2101, val_acc=0.9243
+  Epoch 9/15 | train_loss=0.1864, train_acc=0.9314, val_loss=0.1921, val_acc=0.9318
+  Epoch 10/15 | train_loss=0.1787, train_acc=0.9337, val_loss=0.1935, val_acc=0.9308
+  Epoch 11/15 | train_loss=0.1737, train_acc=0.9355, val_loss=0.2015, val_acc=0.9265
+  Epoch 12/15 | train_loss=0.1671, train_acc=0.9379, val_loss=0.2264, val_acc=0.9172
+  Epoch 13/15 | train_loss=0.1588, train_acc=0.9404, val_loss=0.2060, val_acc=0.9292
+  Epoch 14/15 | train_loss=0.1535, train_acc=0.9432, val_loss=0.1972, val_acc=0.9288
+  Epoch 15/15 | train_loss=0.1475, train_acc=0.9454, val_loss=0.2175, val_acc=0.9178
+
+Total running time (seconds): 55953.52003622055
+
+################################################################################
+Summary of results (best validation accuracy & test accuracy):
+Backbone=cnn, Dataset=A, Regime=linear  | ValAcc(max)=0.8148, TestAcc=0.8080 | Config={'lr': 0.0005, 'epochs': 15, 'batch_size': 32} | time=433.7s
+Backbone=cnn, Dataset=A, Regime=partial | ValAcc(max)=0.9226, TestAcc=0.9177 | Config={'lr': 0.0005, 'epochs': 15, 'batch_size': 32} | time=435.0s
+Backbone=cnn, Dataset=A, Regime=full    | ValAcc(max)=0.9290, TestAcc=0.9186 | Config={'lr': 0.0005, 'epochs': 15, 'batch_size': 32} | time=714.0s
+Backbone=cnn, Dataset=B, Regime=linear  | ValAcc(max)=0.8608, TestAcc=0.8634 | Config={'lr': 0.001, 'epochs': 15, 'batch_size': 64} | time=529.2s
+Backbone=cnn, Dataset=B, Regime=partial | ValAcc(max)=0.9403, TestAcc=0.9367 | Config={'lr': 0.001, 'epochs': 15, 'batch_size': 64} | time=530.2s
+Backbone=cnn, Dataset=B, Regime=full    | ValAcc(max)=0.9445, TestAcc=0.9395 | Config={'lr': 0.001, 'epochs': 15, 'batch_size': 64} | time=801.7s
+Backbone=vit, Dataset=A, Regime=linear  | ValAcc(max)=0.8840, TestAcc=0.8832 | Config={'lr': 0.0005, 'epochs': 15, 'batch_size': 64} | time=448.3s
+Backbone=vit, Dataset=A, Regime=partial | ValAcc(max)=0.9090, TestAcc=0.9074 | Config={'lr': 0.0005, 'epochs': 15, 'batch_size': 64} | time=448.3s
+Backbone=vit, Dataset=A, Regime=full    | ValAcc(max)=0.9132, TestAcc=0.9012 | Config={'lr': 0.0005, 'epochs': 15, 'batch_size': 64} | time=974.5s
+Backbone=vit, Dataset=B, Regime=linear  | ValAcc(max)=0.8778, TestAcc=0.8731 | Config={'lr': 0.0005, 'epochs': 15, 'batch_size': 64} | time=549.7s
+Backbone=vit, Dataset=B, Regime=partial | ValAcc(max)=0.9128, TestAcc=0.9065 | Config={'lr': 0.0005, 'epochs': 15, 'batch_size': 64} | time=547.5s
+Backbone=vit, Dataset=B, Regime=full    | ValAcc(max)=0.9318, TestAcc=0.9145 | Config={'lr': 0.0005, 'epochs': 15, 'batch_size': 64} | time=1166.3s
+
+[Winner] Backbone=cnn, Dataset=A -> Regime=full, ValAcc=0.9290, TestAcc=0.9186, cfg={'lr': 0.0005, 'epochs': 15, 'batch_size': 32}
+
+[Winner] Backbone=cnn, Dataset=B -> Regime=full, ValAcc=0.9445, TestAcc=0.9395, cfg={'lr': 0.001, 'epochs': 15, 'batch_size': 64}
+
+[Winner] Backbone=vit, Dataset=A -> Regime=full, ValAcc=0.9132, TestAcc=0.9012, cfg={'lr': 0.0005, 'epochs': 15, 'batch_size': 64}
+
+[Winner] Backbone=vit, Dataset=B -> Regime=full, ValAcc=0.9318, TestAcc=0.9145, cfg={'lr': 0.0005, 'epochs': 15, 'batch_size': 64}
+
+Saved results to ./outputs/results.json
+Traceback (most recent call last):
+  File "/users/jwu35/.conda/envs/transfer/lib/python3.10/site-packages/pandas/compat/_optional.py", line 135, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/users/jwu35/.conda/envs/transfer/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tabulate'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/users/jwu35/Myspace/Project/NeSy/Ad/Transfer.py", line 538, in <module>
+    main()
+  File "/users/jwu35/Myspace/Project/NeSy/Ad/Transfer.py", line 486, in main
+    f.write(df.sort_values(by=["dataset","backbone","regime"]).to_markdown(index=False))
+  File "/users/jwu35/.conda/envs/transfer/lib/python3.10/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/users/jwu35/.conda/envs/transfer/lib/python3.10/site-packages/pandas/core/frame.py", line 2994, in to_markdown
+    tabulate = import_optional_dependency("tabulate")
+  File "/users/jwu35/.conda/envs/transfer/lib/python3.10/site-packages/pandas/compat/_optional.py", line 138, in import_optional_dependency
+    raise ImportError(msg)
+ImportError: Missing optional dependency 'tabulate'.  Use pip or conda to install tabulate.
+[Tue Nov 11 01:12:57 AM EST 2025] Job finished.
